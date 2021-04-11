@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>pseudo Class Selector</title>
+	<style>
+		header li{
+			list-style: none;
+		}
+		a:link, a:visited {
+			text-decoration: none;
+			background-color: green;
+			border: 1px solid blue;
+			color: black;
+			display: block;
+			width: 150px;
+			text-align: center;
+			margin-bottom: 1px;
+			
+		}
+
+		a:hover, a:active{
+			background-color: red;
+			color:purple;
+		}
+		header li:nth-child(3)
+		{
+		
+			font-size: 30px;
+			font-style: italic;
+		}
+		section div:nth-child(odd){
+			background-color: gray;
+		}
+		section div:nth-child(3):hover{
+			background-color: orange;
+			cursor: :pointer;
+		}
+	</style>
+</head>
+<body>
+	<h1>My Page</h1>
+	<header>
+		<ul>
+			<li>	<a href="https://www.callofduty.com/home" target="_blank" title="COD home page">Call of Duty</a></li>
+			<li><a href="https://www.ubisoft.com/en-gb/game/ghost-recon/breakpoint" target="-_blank" title="Ghost recon breakpoint home page">Ghost Reconbreakpoint</a><li>
+				<li><a href="https://www.ea.com/sports" target="_blank" title="EA Sports Homepage">EA Sport </a></li>
+				<li><a href="https://www.rockstargames.com/games/gta" target="_blank" title="GTA Home page">GTA Games</a>
+			</li>
+		</ul>
+		</header>
+		<section>
+		<div>DIV1</div>
+		<div>DIV2</div>
+		<div>DIV3</div>
+		<div>DIV4</div>
+		<div>DIV5</div>
+		<div>DIV6</div>
+		<div>DIV7</div>
+		<div>DIV8</div>
+		<div>DIV9</div>
+		<div>DIV10</div>
+		<div>DIV11</div>
+		<div>DIV12</div>
+		<div>DIV13</div>
+</section>
+	
+
+</body>
+</html>
