@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>floating elements</title>
+	<style>
+		div{
+			background-color: chartreuse;
+		}
+		p{
+			width: 100px;
+			height: 100px;
+			border: 5px solid darkorange;
+			/*float: right;
+			margin-right: 15px;*/
+		}
+		#p1{
+			background-color: #DC143C;
+			text-align: center;
+			float: right;
+			height: 300px;
+			
+		}
+		#p2{
+			background-color: #00008B;
+			text-align: center;
+			float: left;
+			height: 150px;
+		}
+		#p3{
+			background-color: #008B8B;
+			text-align: center;
+			clear: left;
+		}
+		#p4{
+			background-color: #DEB887;
+			text-align: center;
+			clear: both;
+		}
+		section{
+			clear: left;
+		}
+	</style>
+</head>
+<body>
+	<h1>floating elements</h1>
+	<div>
+		<p id="p1">Call of Duty</p>
+		<p id="p2">PUBG</p>
+		<p id="p3">Ghst Recon underground</p>
+		<p id="p4">need for speed:hot pursuit</p>
+		<section>this is regular content continuing after the paragraph box</section>
+	</div>
+
+</body>
+</html>
