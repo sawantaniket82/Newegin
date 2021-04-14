@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>media queries</title>
+	<style>
+		h1{
+			color: chartreuse;
+			margin-bottom: 15px;
+		}
+		p{
+			border: 2px solid black;
+			margin-bottom: 20px;
+
+		}
+		#p1{
+			background-color: #DC143C;
+			width: 200px;
+			height: 200px;
+		}
+		#p2{
+			background-color: #00008B;
+			width: 50px;
+			height: 50px;
+		}
+		/*********large device only *******/
+	@media(min-width: 1200px) {
+		#p1{
+			width: 800px;
+		}
+		#p2{
+			width: 150px;
+			height: 150px;
+		}
+	}
+
+
+	/***********medium devie only *********/
+	@media(min-width: 992px) and max-width: (1199px){
+		#p1{
+			width: 200%;
+
+		}
+		#p2{
+			width: 100px;
+			height: 100px;
+		}
+	}
+	</style>
+</head>
+<body>
+	<h1> media queries</h1>
+	<p id="p1">Aniket</p>
+	<p id="p2">Sawant</p>
+
+</body>
+</html>
