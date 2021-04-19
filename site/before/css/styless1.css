@@ -1,0 +1,6 @@
+.container-fluid{
+box-sizing: border-box;
+background-color: chartreuse;
+opacity: inherit;
+font-family: cursive;
+}
