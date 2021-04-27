@@ -13,13 +13,13 @@ body{
 
 #logo-img{
 	/*background-image: inherit transform: border-image-source: 'C:/Newegin/site/Website/images.png' no-repeat;*/
-	background: url('C:/Newegin/site/Website/images.png') no-repeat;
+	/*background: url('C:/Newegin/site/Website/images.png') no-repeat;
 	/*background: url('C:/Newegin/site/Website/8jHJT1.jpg') no-repeat;*/
 	width: 200px;
 	height: 200px;
 	margin:  0;
 	padding: 0;
-	border: 1px solid maroon;
+	border: 1px solid maroon; 
 	
 }
 
@@ -89,4 +89,23 @@ body{
 	color: #557c3e;
 	text-align: right;
 	padding-right: 15px;
+}
+
+@media(min-width: 1200px){
+	.jumbotron{
+		background: url(C:/Newegin/site/Website/shop-store-flat-icon-vector-14270828.jpg) no-repeat;
+        height: 675px;
+        box-shadow: 0 0 50px #3F0C1F;
+        border: 2px solid #3F0C1F;
+
+       }
+}
+
+@media(min-width: 992px) and (max-width: 1199px){
+section #logo-img{
+	background: url(C:/Newegin/site/Website/feedc9b1badf776b745272d63510a328.jpg) no-repeat;
+    width: 100px;
+    height: 100px;
+    margin: 5px 5px 5px 0;
+    }
 }
