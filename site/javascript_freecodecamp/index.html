@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>index</title>
+</head>
+<body>
+
 <script>
 	//const myName= "Aniket"
 	//myName = "Newegin 1997"
@@ -119,13 +127,332 @@ console.log("sub string :" +c);*/
 console.log(a);
 console.log("At last position of string character is:"+ a[a.length-2]);*/
 //-----***Blank spaces ****---------
-function words(myNoun,myAdjective,myVerb,myAdverb) {
+/*function words(myNoun,myAdjective,myVerb,myAdverb) {
 	var result ="" ;
 	result += "The" + " " +myAdjective  + " " +myNoun  +" " +myVerb +" "+ "to the store" + " "+myAdverb ;
 	return result;
 	// body...
 }
 console.log(words("dog","big","ran","quickly"));
-console.log(words("friend","big","scanning","quickly"));
+console.log(words("friend","big","scanning","quickly"));*/
+//-----****storing multile value withi array****-------
+/*var an=["my name is Aniket",24,97.3,"Computer Engineer"];
+console.log(an);*/
+//-----***Nested array****--------
+/*var an=[["my name is Aniket",24],[97.3,"Computer Engineer"]];
+console.log(an[1][0]);*/
+//------***Access array data with index***-----
+/*var a = [10,2,0,30,40];
+var b = a[3];
+console.log(b);*/
+//-----****modify array data with index**-----
+/*var a = [10,20,30,40,50];
+console.log(a);
+a[1]=15;
+console.log(a);*/
+//---**Access multidimensional array with index **----
+/*var a =[[1,2,3],[4,5,6],[7,8,9],[[10,11,12],13,14]];
+console.log(a);
+console.log(a[3][0]);*/
+//---**manipulate array with push() & pop()**-----
+/*var a=[["Aniket Sawant",24,97],["Newegin","coursera","freecodecamp"]];
+console.log(a);
+a.push(["Javasacript",0,0]);
+console.log(a);
+a.pop(a[0]="Aniket Sawant");
+console.log(a[0]);
+var b = a.pop();
+console.log(b);*/
+//---**manipulate array with shift() and unshift()**----
+/*var a = [["john",23],["kevin,24"]];
+var b =a.shift();
+console.log(a);
+console.log(b);
+var c= [["Tim",23],["Beau",24]];
+c.shift();
+c.unshift(["Mark",27])
+console.log(c);*/
+//---**Write reusable with function**------
+/*function ourreusableFunction(){
+	console.log("hello","world");
+}
+ourreusableFunction();*/
+//--*passing value to function with arguments**-----
+/*function ourreusableFunction(x,y,a,b,c){
+	console.log("hello","world");
+	var z = x +y;
+	console.log(z);
+    let d =console.log(a-b+c);
+    console.log(d);
+}
+ourreusableFunction(10,33,10.22,27,0);*/
+//---**Global Scope**----
+/*var global1 =15;
+function fun1(){
+unglobal = 22;
+}
+function fun2(){
+	var output = " ";
+	if (typeof global1 !="undefined") {
+		output += "Global value :" +global1;
+	}
+	if (typeof unglobal != "undefined"){
+		output += "unglobal value:" +unglobal;
+	}
+	console.log(output);
+
+}
+
+
+fun1();
+
+fun2();*/
+//----**Local Scope and function**-----
+
+/*function localScope(){
+	var myVar= 10;
+	console.log(myVar);
+}
+
+localScope();
+console.log(myVar);*/
+//---**global vs local scope in function**-----
+/*var outWear= "T-Shirt";
+function myOutfit(){
+	var outWear="Jeaans";
+	return outWear;
+
+}
+console.log(myOutfit());
+console.log(outWear);*/
+//---**Return a value from a functn with return**----
+/*function number(num){
+	return num -88;
+}
+
+console.log(number(99));
+
+function arithmatic(num2){
+	return num2 % 10;
+}
+;
+console.log(arithmatic(22));*/
+//--**Undefined Value returned**---
+//---**Assignment with a Returned Value**----
+
+/*var c1= 0;
+function c2(num){
+	return (num+5)/3;
+
+}
+c1 = c2(10);
+console.log(c1);*/
+
+//----****Stad in line ***----
+/*function nextInLine (arr,item){
+	arr.push();
+	return arr.shift();
+
+}
+var testArr =[1,2,3,4,5];
+console.log("Before:" +JSON.stringify(testArr));
+console.log(nextInLine(testArr,6));
+console.log("After:" +JSON.stringify(testArr));*/
+//---**Boolean Values**----
+/*function welcomeTOBoolean(){
+	return false;
+
+} 
+console.log(welcomeTOBoolean());*/
+//--**If Statements**/////
+/*function trueOrfalse(isItTrue){
+	if (isItTrue) {
+		return "It is true";
+	}
+	return "No, it's not true";
+}
+console.log(trueOrfalse(true));*/
+//--**Equality Operator**----
+/*function equals(val){
+	if (val ==12) {
+		return "Yes value is correct";
+	}
+	return "not equal to set value";
+}
+console.log(equals(10));*/
+//---**Strict Equality Operator**----
+/*function equals(val){
+	if (val ===10) {
+		return "Yes value is correct";
+	}
+	return "not equal to set value";
+}
+console.log(equals('10'));*/
+//--**Comparing different values**----
+/*function compareEquality(a,b){
+	if (a===b) {
+		return "Equals";
+
+	}
+	return "Not euals";
+
+}
+console.log(compareEquality(10,'10'));*/
+//---**Inequality Operator**-----
+/*function equals(val){
+	if (val !=12) {
+		return "not equal to set value";
+	}
+	return "Yes value is correct";
+}
+console.log(equals(10));*/
+//---**Strict Equality Operator**----
+/*function equals(val){
+	if (val !==12) {
+		return "not equal to set value";
+	}
+	return "Yes value is correct";
+}
+console.log(equals(10));*/
+//---**Greater Than Or Equals Operator**----
+/*function greaterThanEqual(val){
+	if (val >= 100){
+		return "greater than 100";
+	}
+	if (val > 50) {
+		return "gretet than 50 but less than 100";
+	}
+	return "10 or Under";
+
+}
+console.log(greaterThanEqual(100));*/
+//---**Less Than Or Equals Operator**---
+/*function lessThanEqual(val){
+	if (val >= 100){
+		return "greater than 100";
+	}
+	if (val <= 50) {
+		return "gretet than 10 but less than 50";
+	}
+	return "10 or Under";
+
+}
+console.log(lessThanEqual(44));*/
+//----**And Operator**----
+/*function And(val){
+	if (val > 100){
+		return "greater than 100";
+	}
+	if (val >= 50 && val <=100) {
+		return "gretet than eual to  50 but less equal  than 100";
+	}
+	if (val >10 && val < 50){
+		return "Greater than 10 but less thean 50 ";
+	}
+	return "10 or Under";
+
+}
+console.log(And(58));*/
+//---**OR Operator**-----
+/*	if (val > 100){
+		return "greater than 100";
+	}
+	if (val >= 50 || val <=100) {
+		return "gretet than eual to  50 but less equal  than 100";
+	}
+	if (val >10 || val < 50){
+		return "Greater than 10 but less thean 50 ";
+	}
+	return "10 or Under";
+
+}
+console.log(OR(58));*/
+//----**Else statement***----
+/*function testElse(val){
+	result="";
+	if (val >= 5) {
+		result = "Greter than eqauls to 5";
+	} 
+	else {
+		result ="Less than 5";
+	}
+	return result;
+
+}
+console.log(testElse(8));*/
+//--**Else if statements**----
+/*function ElseIf(val){
+	result="";
+	if (val > 15) {
+		result = "Greter than eqauls to 5";
+	} 
+	else if(val >=10 && val < 15 ){
+		result = "Value is betwn 10 to 15";
+	}
+	else {
+		result ="Less than 10";
+	}
+
+	return result;
+
+}
+console.log(ElseIf(11));*/
+//---**changing if/else if staements**----
+/*function ifelseif(val){
+	num="";
+	if (val < 5)
+	{
+		num="Tiny";
+	}
+	else if(val < 10)
+	{
+		num = "Small";
+	}
+	else if(val < 15)
+	{
+		num = "Medium";
+	}
+	else if(val < 20)
+	{
+		num = "Large";
+	}
+	else (val > 20)
+	{
+		num = "Huge";
+	}
+	return num;
+}
+
+console.log(ifelseif(19));*/
+//---**Golf code**-----
+/*var name =["Aniket","Sarvesh","Harshal","Paritosh","Nikhil","Prathamesh","Subodh"];
+function golfScore(par,strokes){
+	if (strokes == 1){
+		return name[0];
+	}
+	else if (strokes <= par - 2){
+		return name[1];
+	}
+	else if (strokes == par - 1){
+		return name[2];
+	}
+	else if (strokes == par){
+		return name[3];
+	}
+	else if (strokes == par + 1){
+		return name[4];
+	}
+	else if (strokes == par + 2){
+		return name[5];
+	}
+	else if (strokes >= par + 3){
+		return name[6];
+	}
+}
+console.log(golfScore(0,1));*/
+//---**Switch statements**----
 
 </script>
+
+</body>
+</html>
