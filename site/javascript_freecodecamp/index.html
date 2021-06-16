@@ -425,7 +425,7 @@ console.log(ElseIf(11));*/
 
 console.log(ifelseif(19));*/
 //---**Golf code**-----
-v/*ar name =["Aniket","Sarvesh","Harshal","Paritosh","Nikhil","Prathamesh","Subodh"];
+/*ar name =["Aniket","Sarvesh","Harshal","Paritosh","Nikhil","Prathamesh","Subodh"];
 function golfScore(par,strokes){
 	if (strokes == 1){
 		return name[0];
@@ -451,7 +451,7 @@ function golfScore(par,strokes){
 }
 console.log(golfScore(0,1));*/
 //--**Switch statements**----
-	function switchStatement(val) {
+	/*function switchStatement(val) {
 		var answer = "";
 		switch (val) {
 			case 1:
@@ -461,8 +461,69 @@ console.log(golfScore(0,1));*/
 		    case 2 :		
 
 			default:
-				break;
+				break;*/
+//---****testing object for popertie
+/*var myObj = {
+	gift: "pony",
+	pet: "dog",
+	bed: "ikea"
+};
+ function checkObj(checkprop){
+ 	if(myObj.hasOwnProperty(checkprop)){
+ 		return myObj[checkprop];
+ 	}else {
+ 		return "NOt found"
+ 	}
+ }
+console.log(checkObj("Pet"));*/
+//--**Manipulating complex object**---
+
+var myDreamTeam2 = [
+{
+	"Format" :"Test"
+[
+	"batsmen"["Rohit","Virat","Pujara","Gill","Rahane"],
+	"bolwer"["Bumrah","Shami","Ashwin","jadeja","Siraj","ishant","Umesh"],
+	"all rounder"["Jadeja","Ashwin","Vihari"]
+
+]
+},
+
+{
+	"Format" :"Twenty"
+[
+	"batsmen"["Rohit","Virat","Dhawan","Gill","Agarwal"],
+	"bolwer"["Bumrah","Shami","Saini","jadeja","Siraj"],
+	"all rounder"["Jadeja","Sundar","shardul"]
+]
+},
+{
+
+	"Format" :"Ooo"
+[
+	"batsmen"["Rohit","Virat","KL Rahul","Gill","Shaw","Dhwan"],
+	"bolwer"["Bumrah","Shami","Chahl","Yadav","Siraj"],
+	"all rounder"["Jadeja","K Pandya","H Pandya"]
+
+]
+}
+
+];
+function prop(props) {
+	if (myDreamTeam2.hasOwnProperty(props))
+	{
+		return myDreamTeam2[props];
+	}
+	else
+	{
+		return "Unexpected"
+	}
+	
+	// body...
+}
+console.log(prop("Format"));
 </script>
+
 
 </body>
 </html>
