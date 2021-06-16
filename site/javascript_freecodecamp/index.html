@@ -450,6 +450,7 @@ function golfScore(par,strokes){
 	}
 }
 console.log(golfScore(0,1));*/
+<<<<<<< HEAD
 //--**Switch statements**----
 	/*function switchStatement(val) {
 		var answer = "";
@@ -507,6 +508,130 @@ var myDreamTeam2 = [
 
 ]
 }
+=======
+//---**Switch statements**----
+/*function switchStatemts(val) {
+	var answer = " hustle";
+	switch (val) {
+		case 1:
+			answer += "alpha";
+			
+			break;
+		case 2 :
+			answer += "beta";	
+         	break;
+		case 3 :
+			answer += "gamma";
+			break;
+			case 4 :
+				answer += "delta";	 
+		default:
+		       answer = "Go HHome";
+			break;
+	}
+	return answer;
+	
+}
+console.log(switchStatemts('45'));*/
+//--**multiple idential ption in switch statements**8---
+/*function sequentialSize(val) {
+	var answer = "let's go to ";
+	switch (val) {
+		case 1:
+		case 2:
+		case 3:
+		answer += "School";
+		break;
+		case 4:
+		case 5:
+		case 6:answer +="Home";	
+			break;
+		
+		case 7:
+		case 8:
+		case 9: answer += "Gym";	
+	       break;
+
+		default:
+		  answer += "Bed";
+			break;
+
+	}
+	return answer;
+}
+	console.log(sequentialSize(5));*/
+	//--**Replacing if else with switch statement**---
+	/*function chainSwitch(val) {
+		var answer = "Hello!"
+		switch (val) {
+			case "bob":
+				answer +="Mrley";
+				break;
+				case 42:answer +="mark";
+				break;
+				case 1 :answer +="there is no #1";
+				break;
+				case 99:answer +="missed me by this much";
+				break;
+				case 7:answer +="Ale nine";
+				break;
+		
+			default:
+				answer +="That's OK";
+				break;
+		}
+		return answer +="OK bye";
+		
+	}
+	console.log(chainSwitch("22"));*/
+	//--**Returning boolean value from function**---
+	/*function lessThan(a,b) 
+	{
+		return a < b;
+	}
+	console.log(lessThan(15,25));*/
+	//---**Returning earl pattern from function**---
+	/*function abTest(a,b) {
+		if (a < 0 || b < 0) {
+			return undefined;
+		}
+		return Math.round(Math.pow(Math.sqrt(a)+Math.sqrt(b),3));
+		
+	}
+	console.log(abTest(6,2));*/
+	//--**Counting cards**---
+	var count = 0;
+	function cc(card) {
+		switch (card) {
+			case 2:
+				case 3:
+					case 4:
+						case 5:
+							case 6:
+								count++;
+								break;
+								case 10:
+									case "J":
+										case "Q":
+											case "K":
+												case "A":
+													count --;
+													break;
+
+		}
+		var holdbet ="Hold";
+		if(count > 0){
+			holdbet ="BET"
+		}
+		return count + " " + holdbet;
+		
+	}
+	cc(2);cc('K');cc("J");cc(6);cc(10);cc(6);
+	console.log(cc(4));
+
+
+
+>>>>>>> 6c37bde1fe2cfabeb0d34870ba22f8bb911cd8d6
 
 ];
 function prop(props) {
