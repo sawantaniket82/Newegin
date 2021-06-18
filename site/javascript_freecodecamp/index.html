@@ -711,11 +711,33 @@ console.log(prop("Format"));*/
 // console.log(prop("Format.Test.batsmen"));
 
 //---***forloop****---
-var sum = 0;
-for (var i = 0; i < 10; i++) {
-	sum=sum + i;
-}
-console.log("value:"+sum);
+// var sum = 0;
+// for (var i = 0; i < 10; i++) {
+// 	sum=sum + i;
+// }
+// console.log("value:"+sum);
+//--**Craeting object using new object**---
+var global1 =15;
+		function fun1(){
+		unglobal = 22;
+		}
+		function fun2(){
+			var output = " ";
+			if (typeof global1 !="undefined") {
+				output += "Global value :" +global1;
+			}
+			if (typeof unglobal != "undefined"){
+				output += "unglobal value:" +unglobal;
+			}
+			console.log(fun2.version);
+		
+		}
+		
+		
+		fun1();
+		
+		console.log(fun2().version);
+		
 </script>
 </body>
 </html>
