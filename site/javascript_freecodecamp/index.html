@@ -1,721 +1,825 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<title>index</title>
 </head>
+
 <body>
 
-<script>
-	//const myName= "Aniket"
-	//myName = "Newegin 1997"
- //console.log("My name is " + myName);
- //-----***********Assigning variable********----
- /*var a;
- var b = 5;
- console.log(a);
- a=b;
- console.log(b);
- console.log(a);*/
-//--------*******uninitialized variable********--------
-/*var b =10;
-var c ="I am a";
+	<script>
+		//const myName= "Aniket"
+		//myName = "Newegin 1997"
+		//console.log("My name is " + myName);
+		//-----***********Assigning variable********----
+		/*var a;
+		var b = 5;
+		console.log(a);
+		a=b;
+		console.log(b);
+		console.log(a);*/
+		//--------*******uninitialized variable********--------
+		/*var b =10;
+		var c ="I am a";
+		
+		a = a + 1;
+		b = b + 5;
+		c = c + "String!";
+		
+		console.log("a :" +a);
+		console.log("b :" +b);
+		console.log("c : "+ c);*/
 
-a = a + 1;
-b = b + 5;
-c = c + "String!";
+		//--------------******------------------
+		/*var ab;
+		var b ;
+		var c ;
+		
+		ab= 10;
+		B="Newegin";
+		C=B+10;
+		
+		console.log(ab);
+		console.log(B);
+		console.log(C);*/
+		//--------*******Arithmatic opertions ****************-------
+		/*console.log(sum);
+		var difference = 10-15;
+		console.log(difference);
+		var multiply = 144 * 12.3;
+		console.log(multiply);
+		var division = 55 /11;
+		console.log(division);
+		var rem = 41 % 2;
+		console.log(rem);*/
+		//------****Incrementing & Decrementing num*******-------------
+		/*var a = 87;
+		var b =101;
+		var c =25;
+		var d= 37;
+		a++;
+		 console.log(a);
+		 b++;
+		 console.log(b);
+		 c--;
+		 console.log(c);
+		 d--;
+		 console.log(d);*/
+		//----***compound assignment with augmented arithmatic***---
+		/*var a = 3;
+		var b = 17;
+		var c = 99;
+		var d= 55.2;
+		var e = 27
+		 a += 12;
+		console.log(a);
+		 b -= 33;
+		console.log(b);
+		c *= 2;
+		console.log(c);
+		d /= 2;
+		console.log(d);
+		e %= 3;
+		console.log(e);*/
 
-console.log("a :" +a);
-console.log("b :" +b);
-console.log("c : "+ c);*/
+		//----*****String variale*****----
+		/* var middlename ="Aniket";
+		 var lastname ="Sawant";
+		  var firstname ="Aniket" ;
+		console.log("\t" +firstname ,"\t"+ middlename ,"\t"+ lastname );*/
+		//----*****quoted String*****---
 
-//--------------******------------------
-/*var ab;
-var b ;
-var c ;
+		/*var myStr ="My name is Aniket \"I'm an Engineer\"";
+		console.log(myStr);
+		var myStr2 = '<a href="https://www.callofduty.com/home" target="_blank" title=homepage>COD </a>';
+		console.log(myStr2);*/
+		//-----****Plus Equals Operator*****-------
+		/*var a="My name is Aniket ,";
+		a += "but people cal me with diffrent name";
+		console.log(a);*/
+		//****Constructing Strings with Variables***--
+		/*var name ="Aniket";
+		var ourname ="My name is " +name+",and I'm fine!!!"
+		console.log(ourname);*/
+		//----*****Appending Variables to Strings******--------
+		/*var myStr ="easy and user friendly language";
+		var ourStr ="Javasacript is ";
+		ourStr +=myStr;
+		console.log(ourStr);*/
+		//----***Finding length of the string****-----
+		/*var a ="Aniket";
+		a.length;
+		console.log("length of a :" +a);*/
+		//----***Bracket Notation to find first character in string****-----
+		/*var a="Aniket Ankush sawant";
+		console.log(a);
+		console.log("At 2nd position of string character is:"+ a[8]);*/
+		//------*****Understand String Immutability*****------
+		/*var a="Sniket Ankush sawant";
+		console.log("original string: " +a);
+		a[0]="A";
+		console.log("modified string: " +a[0] );
+		var b =a.replace("Sniket","Aniket");
+		console.log("modified string :" +b);
+		var c = b.slice(7,19);
+		console.log("sub string :" +c);*/
+		//----------***Bracket Notation to find first character in string***--------
+		/*var a="Aniket Ankush sawant";
+		console.log(a);
+		console.log("At last position of string character is:"+ a[a.length-2]);*/
+		//-----***Blank spaces ****---------
+		/*function words(myNoun,myAdjective,myVerb,myAdverb) {
+			var result ="" ;
+			result += "The" + " " +myAdjective  + " " +myNoun  +" " +myVerb +" "+ "to the store" + " "+myAdverb ;
+			return result;
+			// body...
+		}
+		console.log(words("dog","big","ran","quickly"));
+		console.log(words("friend","big","scanning","quickly"));*/
+		//-----****storing multile value withi array****-------
+		/*var an=["my name is Aniket",24,97.3,"Computer Engineer"];
+		console.log(an);*/
+		//-----***Nested array****--------
+		/*var an=[["my name is Aniket",24],[97.3,"Computer Engineer"]];
+		console.log(an[1][0]);*/
+		//------***Access array data with index***-----
+		/*var a = [10,2,0,30,40];
+		var b = a[3];
+		console.log(b);*/
+		//-----****modify array data with index**-----
+		/*var a = [10,20,30,40,50];
+		console.log(a);
+		a[1]=15;
+		console.log(a);*/
+		//---**Access multidimensional array with index **----
+		/*var a =[[1,2,3],[4,5,6],[7,8,9],[[10,11,12],13,14]];
+		console.log(a);
+		console.log(a[3][0]);*/
+		//---**manipulate array with push() & pop()**-----
+		/*var a=[["Aniket Sawant",24,97],["Newegin","coursera","freecodecamp"]];
+		console.log(a);
+		a.push(["Javasacript",0,0]);
+		console.log(a);
+		a.pop(a[0]="Aniket Sawant");
+		console.log(a[0]);
+		var b = a.pop();
+		console.log(b);*/
+		//---**manipulate array with shift() and unshift()**----
+		/*var a = [["john",23],["kevin,24"]];
+		var b =a.shift();
+		console.log(a);
+		console.log(b);
+		var c= [["Tim",23],["Beau",24]];
+		c.shift();
+		c.unshift(["Mark",27])
+		console.log(c);*/
+		//---**Write reusable with function**------
+		/*function ourreusableFunction(){
+			console.log("hello","world");
+		}
+		ourreusableFunction();*/
+		//--*passing value to function with arguments**-----
+		/*function ourreusableFunction(x,y,a,b,c){
+			console.log("hello","world");
+			var z = x +y;
+			console.log(z);
+			let d =console.log(a-b+c);
+			console.log(d);
+		}
+		ourreusableFunction(10,33,10.22,27,0);*/
+		//---**Global Scope**----
+		/*var global1 =15;
+		function fun1(){
+		unglobal = 22;
+		}
+		function fun2(){
+			var output = " ";
+			if (typeof global1 !="undefined") {
+				output += "Global value :" +global1;
+			}
+			if (typeof unglobal != "undefined"){
+				output += "unglobal value:" +unglobal;
+			}
+			console.log(output);
+		
+		}
+		
+		
+		fun1();
+		
+		fun2();*/
+		//----**Local Scope and function**-----
 
-ab= 10;
-B="Newegin";
-C=B+10;
+		/*function localScope(){
+			var myVar= 10;
+			console.log(myVar);
+		}
+		
+		localScope();
+		console.log(myVar);*/
+		//---**global vs local scope in function**-----
+		/*var outWear= "T-Shirt";
+		function myOutfit(){
+			var outWear="Jeaans";
+			return outWear;
+		
+		}
+		console.log(myOutfit());
+		console.log(outWear);*/
+		//---**Return a value from a functn with return**----
+		/*function number(num){
+			return num -88;
+		}
+		
+		console.log(number(99));
+		
+		function arithmatic(num2){
+			return num2 % 10;
+		}
+		;
+		console.log(arithmatic(22));*/
+		//--**Undefined Value returned**---
+		//---**Assignment with a Returned Value**----
 
-console.log(ab);
-console.log(B);
-console.log(C);*/
-//--------*******Arithmatic opertions ****************-------
-/*console.log(sum);
-var difference = 10-15;
-console.log(difference);
-var multiply = 144 * 12.3;
-console.log(multiply);
-var division = 55 /11;
-console.log(division);
-var rem = 41 % 2;
-console.log(rem);*/
-//------****Incrementing & Decrementing num*******-------------
- /*var a = 87;
- var b =101;
- var c =25;
- var d= 37;
- a++;
-  console.log(a);
-  b++;
-  console.log(b);
-  c--;
-  console.log(c);
-  d--;
-  console.log(d);*/
-  //----***compound assignment with augmented arithmatic***---
-  /*var a = 3;
-  var b = 17;
-  var c = 99;
-  var d= 55.2;
-  var e = 27
-   a += 12;
-  console.log(a);
-   b -= 33;
-  console.log(b);
-  c *= 2;
-  console.log(c);
-  d /= 2;
-  console.log(d);
-  e %= 3;
-  console.log(e);*/
+		/*var c1= 0;
+		function c2(num){
+			return (num+5)/3;
+		
+		}
+		c1 = c2(10);
+		console.log(c1);*/
 
-  //----*****String variale*****----
- /* var middlename ="Aniket";
-  var lastname ="Sawant";
-   var firstname ="Aniket" ;
- console.log("\t" +firstname ,"\t"+ middlename ,"\t"+ lastname );*/
- //----*****quoted String*****---
+		//----****Stad in line ***----
+		/*function nextInLine (arr,item){
+			arr.push();
+			return arr.shift();
+		
+		}
+		var testArr =[1,2,3,4,5];
+		console.log("Before:" +JSON.stringify(testArr));
+		console.log(nextInLine(testArr,6));
+		console.log("After:" +JSON.stringify(testArr));*/
+		//---**Boolean Values**----
+		/*function welcomeTOBoolean(){
+			return false;
+		
+		} 
+		console.log(welcomeTOBoolean());*/
+		//--**If Statements**/////
+		/*function trueOrfalse(isItTrue){
+			if (isItTrue) {
+				return "It is true";
+			}
+			return "No, it's not true";
+		}
+		console.log(trueOrfalse(true));*/
+		//--**Equality Operator**----
+		/*function equals(val){
+			if (val ==12) {
+				return "Yes value is correct";
+			}
+			return "not equal to set value";
+		}
+		console.log(equals(10));*/
+		//---**Strict Equality Operator**----
+		/*function equals(val){
+			if (val ===10) {
+				return "Yes value is correct";
+			}
+			return "not equal to set value";
+		}
+		console.log(equals('10'));*/
+		//--**Comparing different values**----
+		/*function compareEquality(a,b){
+			if (a===b) {
+				return "Equals";
+		
+			}
+			return "Not euals";
+		
+		}
+		console.log(compareEquality(10,'10'));*/
+		//---**Inequality Operator**-----
+		/*function equals(val){
+			if (val !=12) {
+				return "not equal to set value";
+			}
+			return "Yes value is correct";
+		}
+		console.log(equals(10));*/
+		//---**Strict Equality Operator**----
+		/*function equals(val){
+			if (val !==12) {
+				return "not equal to set value";
+			}
+			return "Yes value is correct";
+		}
+		console.log(equals(10));*/
+		//---**Greater Than Or Equals Operator**----
+		/*function greaterThanEqual(val){
+			if (val >= 100){
+				return "greater than 100";
+			}
+			if (val > 50) {
+				return "gretet than 50 but less than 100";
+			}
+			return "10 or Under";
+		
+		}
+		console.log(greaterThanEqual(100));*/
+		//---**Less Than Or Equals Operator**---
+		/*function lessThanEqual(val){
+			if (val >= 100){
+				return "greater than 100";
+			}
+			if (val <= 50) {
+				return "gretet than 10 but less than 50";
+			}
+			return "10 or Under";
+		
+		}
+		console.log(lessThanEqual(44));*/
+		//----**And Operator**----
+		/*function And(val){
+			if (val > 100){
+				return "greater than 100";
+			}
+			if (val >= 50 && val <=100) {
+				return "gretet than eual to  50 but less equal  than 100";
+			}
+			if (val >10 && val < 50){
+				return "Greater than 10 but less thean 50 ";
+			}
+			return "10 or Under";
+		
+		}
+		console.log(And(58));*/
+		//---**OR Operator**-----
+		/*	if (val > 100){
+				return "greater than 100";
+			}
+			if (val >= 50 || val <=100) {
+				return "gretet than eual to  50 but less equal  than 100";
+			}
+			if (val >10 || val < 50){
+				return "Greater than 10 but less thean 50 ";
+			}
+			return "10 or Under";
+		
+		}
+		console.log(OR(58));*/
+		//----**Else statement***----
+		/*function testElse(val){
+			result="";
+			if (val >= 5) {
+				result = "Greter than eqauls to 5";
+			} 
+			else {
+				result ="Less than 5";
+			}
+			return result;
+		
+		}
+		console.log(testElse(8));*/
+		//--**Else if statements**----
+		/*function ElseIf(val){
+			result="";
+			if (val > 15) {
+				result = "Greter than eqauls to 5";
+			} 
+			else if(val >=10 && val < 15 ){
+				result = "Value is betwn 10 to 15";
+			}
+			else {
+				result ="Less than 10";
+			}
+		
+			return result;
+		
+		}
+		console.log(ElseIf(11));*/
+		//---**changing if/else if staements**----
+		/*function ifelseif(val){
+			num="";
+			if (val < 5)
+			{
+				num="Tiny";
+			}
+			else if(val < 10)
+			{
+				num = "Small";
+			}
+			else if(val < 15)
+			{
+				num = "Medium";
+			}
+			else if(val < 20)
+			{
+				num = "Large";
+			}
+			else (val > 20)
+			{
+				num = "Huge";
+			}
+			return num;
+		}
+		
+		console.log(ifelseif(19));*/
+		//---**Golf code**-----
+		/*ar name =["Aniket","Sarvesh","Harshal","Paritosh","Nikhil","Prathamesh","Subodh"];
+		function golfScore(par,strokes){
+			if (strokes == 1){
+				return name[0];
+			}
+			else if (strokes <= par - 2){
+				return name[1];
+			}
+			else if (strokes == par - 1){
+				return name[2];
+			}
+			else if (strokes == par){
+				return name[3];
+			}
+			else if (strokes == par + 1){
+				return name[4];
+			}
+			else if (strokes == par + 2){
+				return name[5];
+			}
+			else if (strokes >= par + 3){
+				return name[6];
+			}
+		}
+		console.log(golfScore(0,1));*/
 
-/*var myStr ="My name is Aniket \"I'm an Engineer\"";
-console.log(myStr);
-var myStr2 = '<a href="https://www.callofduty.com/home" target="_blank" title=homepage>COD </a>';
-console.log(myStr2);*/
-//-----****Plus Equals Operator*****-------
-/*var a="My name is Aniket ,";
-a += "but people cal me with diffrent name";
-console.log(a);*/
-//****Constructing Strings with Variables***--
-/*var name ="Aniket";
-var ourname ="My name is " +name+",and I'm fine!!!"
-console.log(ourname);*/
-//----*****Appending Variables to Strings******--------
-/*var myStr ="easy and user friendly language";
-var ourStr ="Javasacript is ";
-ourStr +=myStr;
-console.log(ourStr);*/
-//----***Finding length of the string****-----
-/*var a ="Aniket";
-a.length;
-console.log("length of a :" +a);*/
-//----***Bracket Notation to find first character in string****-----
-/*var a="Aniket Ankush sawant";
-console.log(a);
-console.log("At 2nd position of string character is:"+ a[8]);*/
-//------*****Understand String Immutability*****------
-/*var a="Sniket Ankush sawant";
-console.log("original string: " +a);
-a[0]="A";
-console.log("modified string: " +a[0] );
-var b =a.replace("Sniket","Aniket");
-console.log("modified string :" +b);
-var c = b.slice(7,19);
-console.log("sub string :" +c);*/
-//----------***Bracket Notation to find first character in string***--------
-/*var a="Aniket Ankush sawant";
-console.log(a);
-console.log("At last position of string character is:"+ a[a.length-2]);*/
-//-----***Blank spaces ****---------
-/*function words(myNoun,myAdjective,myVerb,myAdverb) {
-	var result ="" ;
-	result += "The" + " " +myAdjective  + " " +myNoun  +" " +myVerb +" "+ "to the store" + " "+myAdverb ;
-	return result;
-	// body...
-}
-console.log(words("dog","big","ran","quickly"));
-console.log(words("friend","big","scanning","quickly"));*/
-//-----****storing multile value withi array****-------
-/*var an=["my name is Aniket",24,97.3,"Computer Engineer"];
-console.log(an);*/
-//-----***Nested array****--------
-/*var an=[["my name is Aniket",24],[97.3,"Computer Engineer"]];
-console.log(an[1][0]);*/
-//------***Access array data with index***-----
-/*var a = [10,2,0,30,40];
-var b = a[3];
-console.log(b);*/
-//-----****modify array data with index**-----
-/*var a = [10,20,30,40,50];
-console.log(a);
-a[1]=15;
-console.log(a);*/
-//---**Access multidimensional array with index **----
-/*var a =[[1,2,3],[4,5,6],[7,8,9],[[10,11,12],13,14]];
-console.log(a);
-console.log(a[3][0]);*/
-//---**manipulate array with push() & pop()**-----
-/*var a=[["Aniket Sawant",24,97],["Newegin","coursera","freecodecamp"]];
-console.log(a);
-a.push(["Javasacript",0,0]);
-console.log(a);
-a.pop(a[0]="Aniket Sawant");
-console.log(a[0]);
-var b = a.pop();
-console.log(b);*/
-//---**manipulate array with shift() and unshift()**----
-/*var a = [["john",23],["kevin,24"]];
-var b =a.shift();
-console.log(a);
-console.log(b);
-var c= [["Tim",23],["Beau",24]];
-c.shift();
-c.unshift(["Mark",27])
-console.log(c);*/
-//---**Write reusable with function**------
-/*function ourreusableFunction(){
-	console.log("hello","world");
-}
-ourreusableFunction();*/
-//--*passing value to function with arguments**-----
-/*function ourreusableFunction(x,y,a,b,c){
-	console.log("hello","world");
-	var z = x +y;
-	console.log(z);
-    let d =console.log(a-b+c);
-    console.log(d);
-}
-ourreusableFunction(10,33,10.22,27,0);*/
-//---**Global Scope**----
-/*var global1 =15;
-function fun1(){
-unglobal = 22;
-}
-function fun2(){
-	var output = " ";
-	if (typeof global1 !="undefined") {
-		output += "Global value :" +global1;
-	}
-	if (typeof unglobal != "undefined"){
-		output += "unglobal value:" +unglobal;
-	}
-	console.log(output);
-
-}
-
-
-fun1();
-
-fun2();*/
-//----**Local Scope and function**-----
-
-/*function localScope(){
-	var myVar= 10;
-	console.log(myVar);
-}
-
-localScope();
-console.log(myVar);*/
-//---**global vs local scope in function**-----
-/*var outWear= "T-Shirt";
-function myOutfit(){
-	var outWear="Jeaans";
-	return outWear;
-
-}
-console.log(myOutfit());
-console.log(outWear);*/
-//---**Return a value from a functn with return**----
-/*function number(num){
-	return num -88;
-}
-
-console.log(number(99));
-
-function arithmatic(num2){
-	return num2 % 10;
-}
-;
-console.log(arithmatic(22));*/
-//--**Undefined Value returned**---
-//---**Assignment with a Returned Value**----
-
-/*var c1= 0;
-function c2(num){
-	return (num+5)/3;
-
-}
-c1 = c2(10);
-console.log(c1);*/
-
-//----****Stad in line ***----
-/*function nextInLine (arr,item){
-	arr.push();
-	return arr.shift();
-
-}
-var testArr =[1,2,3,4,5];
-console.log("Before:" +JSON.stringify(testArr));
-console.log(nextInLine(testArr,6));
-console.log("After:" +JSON.stringify(testArr));*/
-//---**Boolean Values**----
-/*function welcomeTOBoolean(){
-	return false;
-
-} 
-console.log(welcomeTOBoolean());*/
-//--**If Statements**/////
-/*function trueOrfalse(isItTrue){
-	if (isItTrue) {
-		return "It is true";
-	}
-	return "No, it's not true";
-}
-console.log(trueOrfalse(true));*/
-//--**Equality Operator**----
-/*function equals(val){
-	if (val ==12) {
-		return "Yes value is correct";
-	}
-	return "not equal to set value";
-}
-console.log(equals(10));*/
-//---**Strict Equality Operator**----
-/*function equals(val){
-	if (val ===10) {
-		return "Yes value is correct";
-	}
-	return "not equal to set value";
-}
-console.log(equals('10'));*/
-//--**Comparing different values**----
-/*function compareEquality(a,b){
-	if (a===b) {
-		return "Equals";
-
-	}
-	return "Not euals";
-
-}
-console.log(compareEquality(10,'10'));*/
-//---**Inequality Operator**-----
-/*function equals(val){
-	if (val !=12) {
-		return "not equal to set value";
-	}
-	return "Yes value is correct";
-}
-console.log(equals(10));*/
-//---**Strict Equality Operator**----
-/*function equals(val){
-	if (val !==12) {
-		return "not equal to set value";
-	}
-	return "Yes value is correct";
-}
-console.log(equals(10));*/
-//---**Greater Than Or Equals Operator**----
-/*function greaterThanEqual(val){
-	if (val >= 100){
-		return "greater than 100";
-	}
-	if (val > 50) {
-		return "gretet than 50 but less than 100";
-	}
-	return "10 or Under";
-
-}
-console.log(greaterThanEqual(100));*/
-//---**Less Than Or Equals Operator**---
-/*function lessThanEqual(val){
-	if (val >= 100){
-		return "greater than 100";
-	}
-	if (val <= 50) {
-		return "gretet than 10 but less than 50";
-	}
-	return "10 or Under";
-
-}
-console.log(lessThanEqual(44));*/
-//----**And Operator**----
-/*function And(val){
-	if (val > 100){
-		return "greater than 100";
-	}
-	if (val >= 50 && val <=100) {
-		return "gretet than eual to  50 but less equal  than 100";
-	}
-	if (val >10 && val < 50){
-		return "Greater than 10 but less thean 50 ";
-	}
-	return "10 or Under";
-
-}
-console.log(And(58));*/
-//---**OR Operator**-----
-/*	if (val > 100){
-		return "greater than 100";
-	}
-	if (val >= 50 || val <=100) {
-		return "gretet than eual to  50 but less equal  than 100";
-	}
-	if (val >10 || val < 50){
-		return "Greater than 10 but less thean 50 ";
-	}
-	return "10 or Under";
-
-}
-console.log(OR(58));*/
-//----**Else statement***----
-/*function testElse(val){
-	result="";
-	if (val >= 5) {
-		result = "Greter than eqauls to 5";
-	} 
-	else {
-		result ="Less than 5";
-	}
-	return result;
-
-}
-console.log(testElse(8));*/
-//--**Else if statements**----
-/*function ElseIf(val){
-	result="";
-	if (val > 15) {
-		result = "Greter than eqauls to 5";
-	} 
-	else if(val >=10 && val < 15 ){
-		result = "Value is betwn 10 to 15";
-	}
-	else {
-		result ="Less than 10";
-	}
-
-	return result;
-
-}
-console.log(ElseIf(11));*/
-//---**changing if/else if staements**----
-/*function ifelseif(val){
-	num="";
-	if (val < 5)
-	{
-		num="Tiny";
-	}
-	else if(val < 10)
-	{
-		num = "Small";
-	}
-	else if(val < 15)
-	{
-		num = "Medium";
-	}
-	else if(val < 20)
-	{
-		num = "Large";
-	}
-	else (val > 20)
-	{
-		num = "Huge";
-	}
-	return num;
-}
-
-console.log(ifelseif(19));*/
-//---**Golf code**-----
-/*ar name =["Aniket","Sarvesh","Harshal","Paritosh","Nikhil","Prathamesh","Subodh"];
-function golfScore(par,strokes){
-	if (strokes == 1){
-		return name[0];
-	}
-	else if (strokes <= par - 2){
-		return name[1];
-	}
-	else if (strokes == par - 1){
-		return name[2];
-	}
-	else if (strokes == par){
-		return name[3];
-	}
-	else if (strokes == par + 1){
-		return name[4];
-	}
-	else if (strokes == par + 2){
-		return name[5];
-	}
-	else if (strokes >= par + 3){
-		return name[6];
-	}
-}
-console.log(golfScore(0,1));*/
-
-//--**Switch statements**----
-	/*function switchStatement(val) {
-		var answer = "";
-		switch (val) {
-			case 1:
-				answer = "alpha";
-
-				break;
-		    case 2 :		
-
-			default:
-				break;*/
-//---****testing object for popertie
-/*var myObj = {
-	gift: "pony",
-	pet: "dog",
-	bed: "ikea"
-};
- function checkObj(checkprop){
- 	if(myObj.hasOwnProperty(checkprop)){
- 		return myObj[checkprop];
- 	}else {
- 		return "NOt found"
- 	}
- }
-console.log(checkObj("Pet"));*/
-//--**Manipulating complex object**---
-
-/*var myDreamTeam2 = [
-{
-	"Format" :"Test"
-[
-	"batsmen"["Rohit","Virat","Pujara","Gill","Rahane"],
-	"bolwer"["Bumrah","Shami","Ashwin","jadeja","Siraj","ishant","Umesh"],
-	"all rounder"["Jadeja","Ashwin","Vihari"]
-
-]
-},
-
-{
-	"Format" :"Twenty"
-[
-	"batsmen"["Rohit","Virat","Dhawan","Gill","Agarwal"],
-	"bolwer"["Bumrah","Shami","Saini","jadeja","Siraj"],
-	"all rounder"["Jadeja","Sundar","shardul"]
-]
-},
-{
-
-	"Format" :"Ooo"
-[
-	"batsmen"["Rohit","Virat","KL Rahul","Gill","Shaw","Dhwan"],
-	"bolwer"["Bumrah","Shami","Chahl","Yadav","Siraj"],
-	"all rounder"["Jadeja","K Pandya","H Pandya"]
-
-]
-}
-
-];
-function prop(props) {
-	if (myDreamTeam2.hasOwnProperty(props))
-	{
-		return myDreamTeam2[props];
-	}else
-	{
-		return "Unexpected"
-	}
+		//--**Switch statements**----
+		/*function switchStatement(val) {
+			var answer = "";
+			switch (val) {
+				case 1:
+					answer = "alpha";
 	
-}
-console.log(prop("batsmen"));*/
-//---**Switch statements**----
-/*function switchStatemts(val) {
-	var answer = " hustle";
-	switch (val) {
-		case 1:
-			answer += "alpha";
+					break;
+				case 2 :		
+	
+				default:
+					break;*/
+		//---****testing object for popertie
+		/*var myObj = {
+			gift: "pony",
+			pet: "dog",
+			bed: "ikea"
+		};
+		 function checkObj(checkprop){
+			  if(myObj.hasOwnProperty(checkprop)){
+					return myObj[checkprop];
+			  }else {
+					return "NOt found"
+			  }
+		 }
+		console.log(checkObj("Pet"));*/
+		//--**Manipulating complex object**---
+
+		/*var myDreamTeam2 = [
+		{
+			"Format" :"Test"
+		[
+			"batsmen"["Rohit","Virat","Pujara","Gill","Rahane"],
+			"bolwer"["Bumrah","Shami","Ashwin","jadeja","Siraj","ishant","Umesh"],
+			"all rounder"["Jadeja","Ashwin","Vihari"]
+		
+		]
+		},
+		
+		{
+			"Format" :"Twenty"
+		[
+			"batsmen"["Rohit","Virat","Dhawan","Gill","Agarwal"],
+			"bolwer"["Bumrah","Shami","Saini","jadeja","Siraj"],
+			"all rounder"["Jadeja","Sundar","shardul"]
+		]
+		},
+		{
+		
+			"Format" :"Ooo"
+		[
+			"batsmen"["Rohit","Virat","KL Rahul","Gill","Shaw","Dhwan"],
+			"bolwer"["Bumrah","Shami","Chahl","Yadav","Siraj"],
+			"all rounder"["Jadeja","K Pandya","H Pandya"]
+		
+		]
+		}
+		
+		];
+		function prop(props) {
+			if (myDreamTeam2.hasOwnProperty(props))
+			{
+				return myDreamTeam2[props];
+			}else
+			{
+				return "Unexpected"
+			}
 			
-			break;
-		case 2 :
-			answer += "beta";	
-         	break;
-		case 3 :
-			answer += "gamma";
-			break;
-			case 4 :
-				answer += "delta";	 
-		default:
-		       answer = "Go HHome";
-			break;
-	}
-	return answer;
-	
-}
-console.log(switchStatemts('45'));*/
-//--**multiple idential ption in switch statements**8---
-/*function sequentialSize(val) {
-	var answer = "let's go to ";
-	switch (val) {
-		case 1:
-		case 2:
-		case 3:
-		answer += "School";
-		break;
-		case 4:
-		case 5:
-		case 6:answer +="Home";	
-			break;
-		
-		case 7:
-		case 8:
-		case 9: answer += "Gym";	
-	       break;
-
-		default:
-		  answer += "Bed";
-			break;
-
-	}
-	return answer;
-}
-	console.log(sequentialSize(5));*/
-	//--**Replacing if else with switch statement**---
-	/*function chainSwitch(val) {
-		var answer = "Hello!"
-		switch (val) {
-			case "bob":
-				answer +="Mrley";
-				break;
-				case 42:answer +="mark";
-				break;
-				case 1 :answer +="there is no #1";
-				break;
-				case 99:answer +="missed me by this much";
-				break;
-				case 7:answer +="Ale nine";
-				break;
-		
-			default:
-				answer +="That's OK";
-				break;
 		}
-		return answer +="OK bye";
-		
-	}
-	console.log(chainSwitch("22"));*/
-	//--**Returning boolean value from function**---
-	/*function lessThan(a,b) 
-	{
-		return a < b;
-	}
-	console.log(lessThan(15,25));*/
-	//---**Returning earl pattern from function**---
-	/*function abTest(a,b) {
-		if (a < 0 || b < 0) {
-			return undefined;
+		console.log(prop("batsmen"));*/
+		//---**Switch statements**----
+		/*function switchStatemts(val) {
+			var answer = " hustle";
+			switch (val) {
+				case 1:
+					answer += "alpha";
+					
+					break;
+				case 2 :
+					answer += "beta";	
+					  break;
+				case 3 :
+					answer += "gamma";
+					break;
+					case 4 :
+						answer += "delta";	 
+				default:
+					   answer = "Go HHome";
+					break;
+			}
+			return answer;
+			
 		}
-		return Math.round(Math.pow(Math.sqrt(a)+Math.sqrt(b),3));
-		
-	}
-	console.log(abTest(6,2));*/
-	//--**Counting cards**---
-	/*var count = 0;
-	function cc(card) {
-		switch (card) {
-			case 2:
+		console.log(switchStatemts('45'));*/
+		//--**multiple idential ption in switch statements**8---
+		/*function sequentialSize(val) {
+			var answer = "let's go to ";
+			switch (val) {
+				case 1:
+				case 2:
 				case 3:
-					case 4:
-						case 5:
-							case 6:
-								count++;
-								break;
-								case 10:
-									case "J":
-										case "Q":
-											case "K":
-												case "A":
-													count --;
-													break;
-
-		}
-		var holdbet ="Hold";
-		if(count > 0){
-			holdbet ="BET"
-		}
-		return count + " " + holdbet;
+				answer += "School";
+				break;
+				case 4:
+				case 5:
+				case 6:answer +="Home";	
+					break;
+				
+				case 7:
+				case 8:
+				case 9: answer += "Gym";	
+				   break;
 		
-	}
-	cc(2);cc('K');cc("J");cc(6);cc(10);cc(6);
-	console.log(cc(4));
-
-
-
-
-
-];
-function prop(props) {
-	if (myDreamTeam2.hasOwnProperty(props))
-	{
-		return myDreamTeam2[props];
-	}
-	else
-	{
-		return "Unexpected"
-	}
+				default:
+				  answer += "Bed";
+					break;
+		
+			}
+			return answer;
+		}
+			console.log(sequentialSize(5));*/
+		//--**Replacing if else with switch statement**---
+		/*function chainSwitch(val) {
+			var answer = "Hello!"
+			switch (val) {
+				case "bob":
+					answer +="Mrley";
+					break;
+					case 42:answer +="mark";
+					break;
+					case 1 :answer +="there is no #1";
+					break;
+					case 99:answer +="missed me by this much";
+					break;
+					case 7:answer +="Ale nine";
+					break;
+			
+				default:
+					answer +="That's OK";
+					break;
+			}
+			return answer +="OK bye";
+			
+		}
+		console.log(chainSwitch("22"));*/
+		//--**Returning boolean value from function**---
+		/*function lessThan(a,b) 
+		{
+			return a < b;
+		}
+		console.log(lessThan(15,25));*/
+		//---**Returning earl pattern from function**---
+		/*function abTest(a,b) {
+			if (a < 0 || b < 0) {
+				return undefined;
+			}
+			return Math.round(Math.pow(Math.sqrt(a)+Math.sqrt(b),3));
+			
+		}
+		console.log(abTest(6,2));*/
+		//--**Counting cards**---
+		/*var count = 0;
+		function cc(card) {
+			switch (card) {
+				case 2:
+					case 3:
+						case 4:
+							case 5:
+								case 6:
+									count++;
+									break;
+									case 10:
+										case "J":
+											case "Q":
+												case "K":
+													case "A":
+														count --;
+														break;
 	
-	// body...
-}
-console.log(prop("Format"));*/
-
-//---******----
-
-
-// var myDreamTeam2 = [
-// {
-// 	Format:
-//     {
-//         Test:
-//     {
-// 	"batsmen":["Rohit","Virat","Pujara","Gill","Rahane"],
-// 	"bolwer":["Bumrah","Shami","Ashwin","jadeja","Siraj","ishant","Umesh"],
-// 	"all rounder":["Jadeja","Ashwin","Vihari"]
-//     }
-//     }
-// },
-// {
-// 	Format:
-//     {
-//         ODI:
-//     {
-// 	"batsmen":["Rohit","Virat","","Gill","Dhawan"],
-// 	"bolwer":["Bumrah","Shami","","jadeja","Siraj"],
-// 	"all rounder":["Jadeja"]
-//     }
-//     }
-// },
-// {
-// 	Format:
-//     {
-//         T20:
-//     {
-// 	"batsmen":["Rohit","Virat","Gill","Agarawal"],
-// 	"bolwer":["Bumrah","Shami","jadeja","Siraj"],
-// 	"all rounder":["Jadeja","H pandya","K pandya"]
-//     }
-//     }
-// }
-// ];
-// function prop(props) {
-// 	if (myDreamTeam2.hasOwnProperty(props))
-// 	{
-// 		return myDreamTeam2[props];
-// 	}else
-// 	{
-// 		return "Unexpected"
-// 	}
+			}
+			var holdbet ="Hold";
+			if(count > 0){
+				holdbet ="BET"
+			}
+			return count + " " + holdbet;
+			
+		}
+		cc(2);cc('K');cc("J");cc(6);cc(10);cc(6);
+		console.log(cc(4));
 	
-// }
-// console.log(prop("Format.Test.batsmen"));
+	
+	
+	
+	
+	];
+	function prop(props) {
+		if (myDreamTeam2.hasOwnProperty(props))
+		{
+			return myDreamTeam2[props];
+		}
+		else
+		{
+			return "Unexpected"
+		}
+		
+		// body...
+	}
+	console.log(prop("Format"));*/
 
-//---***forloop****---
-var sum = 0;
-for (var i = 0; i < 10; i++) {
-	sum=sum + i;
-}
-console.log("value:"+sum);
-</script>
+		//---******----
+
+
+		// var myDreamTeam2 = [
+		// {
+		// 	Format:
+		//     {
+		//         Test:
+		//     {
+		// 	"batsmen":["Rohit","Virat","Pujara","Gill","Rahane"],
+		// 	"bolwer":["Bumrah","Shami","Ashwin","jadeja","Siraj","ishant","Umesh"],
+		// 	"all rounder":["Jadeja","Ashwin","Vihari"]
+		//     }
+		//     }
+		// },
+		// {
+		// 	Format:
+		//     {
+		//         ODI:
+		//     {
+		// 	"batsmen":["Rohit","Virat","","Gill","Dhawan"],
+		// 	"bolwer":["Bumrah","Shami","","jadeja","Siraj"],
+		// 	"all rounder":["Jadeja"]
+		//     }
+		//     }
+		// },
+		// {
+		// 	Format:
+		//     {
+		//         T20:
+		//     {
+		// 	"batsmen":["Rohit","Virat","Gill","Agarawal"],
+		// 	"bolwer":["Bumrah","Shami","jadeja","Siraj"],
+		// 	"all rounder":["Jadeja","H pandya","K pandya"]
+		//     }
+		//     }
+		// }
+		// ];
+		// function prop(props) {
+		// 	if (myDreamTeam2.hasOwnProperty(props))
+		// 	{
+		// 		return myDreamTeam2[props];
+		// 	}else
+		// 	{
+		// 		return "Unexpected"
+		// 	}
+
+		// }
+		// console.log(prop("Format.Test.batsmen"));
+
+		//---***forloop****---
+		// var sum = 0;
+		// for (var i = 0; i < 10; i++) {
+		// 	sum=sum + i;
+		// }
+		// console.log("value:"+sum);
+		//---**Creating object using new object**---
+		// var company = new Object();
+		// company.name = "Facebook";
+		//  company.ceo = new Object();
+		// company.ceo.firstname= "Mark";
+		// company.ceo.Favcoor = "blue";
+		// company["nture of working"] = " 9 to 5";
+		// console.log(company);
+		// console.log(company.ceo.firstname);
+		// console.log("company working hours:" +company["nture of working"]);
+		//--**literal object**---
+		// var myDreamTeam2 =
+		// 	{
+		// 		Format1:
+		// 		{
+		// 			Test:
+		// 			{
+		// 				"batsmen": ["Rohit", "Virat", "Pujara", "Gill", "Rahane"],
+		// 				"bolwer": ["Bumrah", "Shami", "Ashwin", "jadeja", "Siraj", "ishant", "Umesh"],
+		// 				"all rounder": ["Jadeja", "Ashwin", "Vihari"]
+		// 			},
+		// 			"highest score": "2110"
+		// 		}
+		// 	}
+		// 	console.log(myDreamTeam2.Format1.Test.batsmen);
+
+		//---**Accessing nested array***----
+		var myDreamTeam2 = [{
+				Format: {
+					Test: {
+						"batsmen": ["Rohit", "Virat", "Pujara", "Gill", "Rahane"],
+						"bolwer": ["Bumrah", "Shami", "Ashwin", "jadeja", "Siraj", "ishant", "Umesh"],
+						"all rounder": ["Jadeja", "Ashwin", "Vihari"]
+					}
+				}
+			}, {
+				Format: {
+					ODI: {
+						"batsmen": ["Rohit", "Virat", "", "Gill", "Dhawan"],
+						"bolwer": ["Bumrah", "Shami", "", "jadeja", "Siraj"],
+						"all rounder": ["Jadeja"]
+					}
+				}
+			}, {
+				Format: {
+					T20: {
+						"batsmen": ["Rohit", "Virat", "Gill", "Agarawal"],
+						"bolwer": ["Bumrah", "Shami", "jadeja", "Siraj"],
+						"all rounder": ["Jadeja", "H pandya", "K pandya"]
+					}
+				}
+			}
+
+			];
+			var one = myDreamTeam2[1].Format[0];
+			console.log("dream team :" + one);
+
+			///---**Record Collection*---
+			var myDreamTeam2 = [{
+					"Format": {
+						"Test": {
+							"batsmen": ["Rohit", "Virat", "Pujara", "Gill", "Rahane"],
+							"bolwer": ["Bumrah", "Shami", "Ashwin", "jadeja", "Siraj", "ishant", "Umesh"],
+							"all rounder": ["Jadeja", "Ashwin", "Vihari"]
+						}
+					}
+				}, {
+					"Format": {
+						"ODI": [{
+							"batsmen": ["Rohit", "Virat", "", "Gill", "Dhawan"],
+							"bolwer": ["Bumrah", "Shami", "", "jadeja", "Siraj"],
+							"all rounder": ["Jadeja"]
+						}
+						]
+					}
+				}, {
+					"Format": {
+						"T20": {
+							"batsmen": ["Rohit", "Virat", "Gill", "Agarawal"],
+							"bolwer": ["Bumrah", "Shami", "jadeja", "Siraj"],
+							"all rounder": ["Jadeja", "H pandya", "K pandya"]
+						}
+					}
+				}
+
+				];
+				var one = JSON.parse(JSON.stringify(myDreamTeam2));
+
+				function updateRecord(id, prop, value) {
+					if (value === "") {
+						delete myDreamTeam2[id][prop];
+					} else if (prop === "Format") {
+						myDreamTeam2[id][prop] = myDreamTeam2[id][prop] || [];
+						myDreamTeam2[id][prop].push(value);
+					} else {
+						myDreamTeam2[id][prop] = value;
+					}
+					return myDreamTeam2;
+				}
+
+				console.log(updateRecord("ODI", "batsmen", "Manish Pandey"));
+	</script>
 </body>
+
 </html>
