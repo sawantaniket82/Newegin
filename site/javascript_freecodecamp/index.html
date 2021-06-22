@@ -745,80 +745,131 @@
 		// 	console.log(myDreamTeam2.Format1.Test.batsmen);
 
 		//---**Accessing nested array***----
-		var myDreamTeam2 = [{
-				Format: {
-					Test: {
-						"batsmen": ["Rohit", "Virat", "Pujara", "Gill", "Rahane"],
-						"bolwer": ["Bumrah", "Shami", "Ashwin", "jadeja", "Siraj", "ishant", "Umesh"],
-						"all rounder": ["Jadeja", "Ashwin", "Vihari"]
-					}
-				}
-			}, {
-				Format: {
-					ODI: {
-						"batsmen": ["Rohit", "Virat", "", "Gill", "Dhawan"],
-						"bolwer": ["Bumrah", "Shami", "", "jadeja", "Siraj"],
-						"all rounder": ["Jadeja"]
-					}
-				}
-			}, {
-				Format: {
-					T20: {
-						"batsmen": ["Rohit", "Virat", "Gill", "Agarawal"],
-						"bolwer": ["Bumrah", "Shami", "jadeja", "Siraj"],
-						"all rounder": ["Jadeja", "H pandya", "K pandya"]
-					}
-				}
-			}
+		// var myDreamTeam2 = [{
+		// 		Format: {
+		// 			Test: {
+		// 				"batsmen": ["Rohit", "Virat", "Pujara", "Gill", "Rahane"],
+		// 				"bolwer": ["Bumrah", "Shami", "Ashwin", "jadeja", "Siraj", "ishant", "Umesh"],
+		// 				"all rounder": ["Jadeja", "Ashwin", "Vihari"]
+		// 			}
+		// 		}
+		// 	}, {
+		// 		Format: {
+		// 			ODI: {
+		// 				"batsmen": ["Rohit", "Virat", "", "Gill", "Dhawan"],
+		// 				"bolwer": ["Bumrah", "Shami", "", "jadeja", "Siraj"],
+		// 				"all rounder": ["Jadeja"]
+		// 			}
+		// 		}
+		// 	}, {
+		// 		Format: {
+		// 			T20: {
+		// 				"batsmen": ["Rohit", "Virat", "Gill", "Agarawal"],
+		// 				"bolwer": ["Bumrah", "Shami", "jadeja", "Siraj"],
+		// 				"all rounder": ["Jadeja", "H pandya", "K pandya"]
+		// 			}
+		// 		}
+		// 	}
 
-			];
-			var one = myDreamTeam2[1].Format[0];
-			console.log("dream team :" + one);
+		// 	];
+		// 	var one = myDreamTeam2[1].Format[0];
+		// 	console.log("dream team :" + one);
 
-			///---**Record Collection*---
-			var myDreamTeam2 = [{
-					"Format": {
-						"Test": {
-							"batsmen": ["Rohit", "Virat", "Pujara", "Gill", "Rahane"],
-							"bolwer": ["Bumrah", "Shami", "Ashwin", "jadeja", "Siraj", "ishant", "Umesh"],
-							"all rounder": ["Jadeja", "Ashwin", "Vihari"]
-						}
-					}
-				}, {
-					"Format": {
-						"ODI": [{
-							"batsmen": ["Rohit", "Virat", "", "Gill", "Dhawan"],
-							"bolwer": ["Bumrah", "Shami", "", "jadeja", "Siraj"],
-							"all rounder": ["Jadeja"]
-						}
-						]
-					}
-				}, {
-					"Format": {
-						"T20": {
-							"batsmen": ["Rohit", "Virat", "Gill", "Agarawal"],
-							"bolwer": ["Bumrah", "Shami", "jadeja", "Siraj"],
-							"all rounder": ["Jadeja", "H pandya", "K pandya"]
-						}
-					}
-				}
+		// 	///---**Record Collection*---
+		// 	var myDreamTeam2 = [{
+		// 			"Format": {
+		// 				"Test": {
+		// 					"batsmen": ["Rohit", "Virat", "Pujara", "Gill", "Rahane"],
+		// 					"bolwer": ["Bumrah", "Shami", "Ashwin", "jadeja", "Siraj", "ishant", "Umesh"],
+		// 					"all rounder": ["Jadeja", "Ashwin", "Vihari"]
+		// 				}
+		// 			}
+		// 		}, {
+		// 			"Format": {
+		// 				"ODI": [{
+		// 					"batsmen": ["Rohit", "Virat", "", "Gill", "Dhawan"],
+		// 					"bolwer": ["Bumrah", "Shami", "", "jadeja", "Siraj"],
+		// 					"all rounder": ["Jadeja"]
+		// 				}
+		// 				]
+		// 			}
+		// 		}, {
+		// 			"Format": {
+		// 				"T20": {
+		// 					"batsmen": ["Rohit", "Virat", "Gill", "Agarawal"],
+		// 					"bolwer": ["Bumrah", "Shami", "jadeja", "Siraj"],
+		// 					"all rounder": ["Jadeja", "H pandya", "K pandya"]
+		// 				}
+		// 			}
+		// 		}
 
-				];
-				var one = JSON.parse(JSON.stringify(myDreamTeam2));
+		// 		];
+		// 		var one = JSON.parse(JSON.stringify(myDreamTeam2));
 
-				function updateRecord(id, prop, value) {
-					if (value === "") {
-						delete myDreamTeam2[id][prop];
-					} else if (prop === "Format") {
-						myDreamTeam2[id][prop] = myDreamTeam2[id][prop] || [];
-						myDreamTeam2[id][prop].push(value);
-					} else {
-						myDreamTeam2[id][prop] = value;
-					}
-					return myDreamTeam2;
-				}
+		// 		function updateRecord(id, prop, value) {
+		// 			if (value === "") {
+		// 				delete myDreamTeam2[id][prop];
+		// 			} else if (prop === "Format") {
+		// 				myDreamTeam2[id][prop] = myDreamTeam2[id][prop] || [];
+		// 				myDreamTeam2[id][prop].push(value);
+		// 			} else {
+		// 				myDreamTeam2[id][prop] = value;
+		// 			}
+		// 			return myDreamTeam2;
+		// 		}
 
-				console.log(updateRecord("ODI", "batsmen", "Manish Pandey"));
+		// 		console.log(updateRecord("ODI", "batsmen", "Manish Pandey"));
+		//--***Passing by value***---
+		// var a =10;
+		// var b = a;
+		// console.log("value of a and b ");
+		// console.log("a :" +a);
+		// console.log("b :" + b);
+
+		// b= 15;
+		// console.log("After change");
+		// console.log("a :" + a);
+		// console.log("b :" + b);
+		//--**Passing by reference**-----
+		// var a = { x : 7};
+		// var b = a;
+		// console.log("value of a and b ");
+		// console.log(a);
+		// console.log( b);
+
+		// b.x= 15;
+		// console.log("After change");
+		// console.log(a);
+		// console.log(b);
+		//---***pass by value using function***----
+		// function changeValue(primValue){
+		// 	console.log("Primitive value");
+		// 	console.log("before:");
+		// 	console.log(primValue);
+
+		// 	primValue=23;
+		// 	console.log("After:");
+		// 	console.log(primValue);
+		// }
+		// var value=99;
+		// changeValue(value);
+		// console.log("After prmitive,Original Value");
+		// console.log(value);
+		//---***pass by reference using function***----
+		// function changeObj(ObjValue) {
+		// 	console.log("Primitive value");
+		// 	console.log("before:");
+		// 	console.log(ObjValue);
+
+		// 	ObjValue.x=230;
+		// 	console.log("After:");
+		// 	console.log(ObjValue);
+		// }
+		// var ObjValue2 = {x : 1000};
+		// changeObj(ObjValue2);
+		// console.log("After prmitive,Original Value");
+		// console.log(ObjValue2);
+
 	</script>
 </body>
 
