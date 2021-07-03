@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script>
+		//Simple Program
+
+		// document.write("Hello World");
+
+		//Square Root of a Number
+
+		// var a = parseInt(prompt("Enter a  number"));
+		// var b = Math.sqrt(a);
+		// document.write("Square root of entered number is " +b);
+
+		//JavaScript Program to Calculate the Area of a Triangle
+
+		// var base,height,result;
+		// base = parseFloat(prompt("Enter base value"));
+		// height = parseFloat(prompt("Enter height value"));
+		// result = (base*height)/2;
+		// let triangle = result;
+		// document.write("Area of traiangle is " + triangle + " area.sqt");
+
+		//Area When All Sides are Known
+		// var side1, side2, side3,result;
+		// side1 = parseFloat(prompt("Enter side1 value"));
+		// side2 = parseFloat(prompt("Enter side2 value"));
+		// side3 = parseFloat(prompt("Enter side3 value"));
+		// var s = (side1 + side2 + side3)/2;
+		// result = Math.sqrt(s*(s-side1)*(s-side1)*(s-side1));
+		// document.write("Area of all side :" +result);
+
+
+		//JavaScript Program to Swap Two Variables
+		// var a = parseFloat(prompt("Enter a value"));
+		// var b = parseFloat(prompt("Enter b value"));
+		// var temp = a;
+		// a = b;
+		// b = temp;
+		// document.write("After swapping <br>");
+		// document.write("value of a :" +a+ " and value of b : " +b);
+
+		// Using es6(ES2015) Destructuring assignment
+		// var a = parseFloat(prompt("Enter a value"));
+		// var b = parseFloat(prompt("Enter b value"));
+		// [a,b]=[b,a];
+		// document.write("After swapping <br>");
+		// document.write("value of a :" +a+ " and value of b : " +b);
+
+		//Using Arithmetic Operators
+		// var a = parseFloat(prompt("Enter a value"));
+		//  var b = parseFloat(prompt("Enter b value"));
+		//  a=a+b;
+		//  b=a-b;
+		//  a=a-b;
+		//  document.write("After swapping <br>");
+		// document.write("value of a :" +a+ " and value of b : " +b);
+
+		//Javascript Program to Solve Quadratic Equation
+		var a, b, c, root1, root2, discrement;
+		a = parseFloat(prompt("Enter a value"));
+		b = parseFloat(prompt("Enter b value"));
+		c = parseFloat(prompt("Enter c value"));
+
+		discrement = b*b -4*a*c;
+
+		if(discrement > 0){
+			root1 = (-b+Math.sqrt(discrement))/(2*a);
+			root2 = (-b - Math.sqrt(discrement)) / (2 * a);
+		
+		document.write("Quadratic equation of root1 :" + root1 +" And root2 :" + root2);
+		}
+		else if(discrement == 0){
+			root1=root2=-b/(2*a);
+			document.write("Quadratic Equation " +root1, +root2)
+		}
+		else{
+			let realPart = (-b / (2 * a)).toFixed(2);
+			let imagPart = (Math.sqrt(-discrement) / (2 * a)).toFixed(2);
+			//  root1 = realPart + imagPart;
+			//  root2 = realPart - imagPart;
+			document.write("Quadratic equation of root1:" + realPart + "+" + imagPart + "i" ,"and root2 :" + realPart + "-" + imagPart + "i");
+			// document.write(
+			// 	`The roots of quadratic equation are ${realPart} + ${imagPart}i and ${realPart} - ${imagPart}i`
+			// )
+		
+		}
+
+
+	</script>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>javascript programs</title>
+	<link rel="stylesheet" href="">
+</head>
+
+<body>
+
+</body>
+
+</html>
