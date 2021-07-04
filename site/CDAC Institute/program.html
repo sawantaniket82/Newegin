@@ -58,34 +58,104 @@
 		// document.write("value of a :" +a+ " and value of b : " +b);
 
 		//Javascript Program to Solve Quadratic Equation
-		var a, b, c, root1, root2, discrement;
-		a = parseFloat(prompt("Enter a value"));
-		b = parseFloat(prompt("Enter b value"));
-		c = parseFloat(prompt("Enter c value"));
+		// var a, b, c, root1, root2, discrement;
+		// a = parseFloat(prompt("Enter a value"));
+		// b = parseFloat(prompt("Enter b value"));
+		// c = parseFloat(prompt("Enter c value"));
 
-		discrement = b*b -4*a*c;
+		// discrement = b*b -4*a*c;
 
-		if(discrement > 0){
-			root1 = (-b+Math.sqrt(discrement))/(2*a);
-			root2 = (-b - Math.sqrt(discrement)) / (2 * a);
+		// if(discrement > 0){
+		// 	root1 = (-b+Math.sqrt(discrement))/(2*a);
+		// 	root2 = (-b - Math.sqrt(discrement)) / (2 * a);
 		
-		document.write("Quadratic equation of root1 :" + root1 +" And root2 :" + root2);
-		}
-		else if(discrement == 0){
-			root1=root2=-b/(2*a);
-			document.write("Quadratic Equation " +root1, +root2)
-		}
-		else{
-			let realPart = (-b / (2 * a)).toFixed(2);
-			let imagPart = (Math.sqrt(-discrement) / (2 * a)).toFixed(2);
-			//  root1 = realPart + imagPart;
-			//  root2 = realPart - imagPart;
-			document.write("Quadratic equation of root1:" + realPart + "+" + imagPart + "i" ,"and root2 :" + realPart + "-" + imagPart + "i");
-			// document.write(
-			// 	`The roots of quadratic equation are ${realPart} + ${imagPart}i and ${realPart} - ${imagPart}i`
-			// )
+		// document.write("Quadratic equation of root1 :" + root1 +" And root2 :" + root2);
+		// }
+		// else if(discrement == 0){
+		// 	root1=root2=-b/(2*a);
+		// 	document.write("Quadratic Equation " +root1, +root2)
+		// }
+		// else{
+		// 	let realPart = (-b / (2 * a)).toFixed(2);
+		// 	let imagPart = (Math.sqrt(-discrement) / (2 * a)).toFixed(2);
+		// 	//  root1 = realPart + imagPart;
+		// 	//  root2 = realPart - imagPart;
+		// 	document.write("Quadratic equation of root1:" + realPart + "+" + imagPart + "i" ,"and root2 :" + realPart + "-" + imagPart + "i");
+		// 	// document.write(
+		// 	// 	`The roots of quadratic equation are ${realPart} + ${imagPart}i and ${realPart} - ${imagPart}i`
+		// 	// )
 		
-		}
+		// }
+
+		//Generate a Random Number
+		// var a = Math.random()
+		// document.write(a);
+
+		// Largest Number Among Three Numbers
+
+		// var a, b, c;
+		// a = parseFloat(prompt("Enter a value"));
+		// b = parseFloat(prompt("Enter b value"));
+		// c = parseFloat(prompt("Enter c value"));
+		// if(a > b && a > c){
+		// 	document.write("Largest number :" +a);
+		// }
+		// else if (b > a && b > c) {
+		// 	document.write("Largest number :" + b);
+			
+		// } else {
+		// 	document.write("Largest number :" + c);
+		// }
+
+		//Using Math.max()
+		// var a, b, c,largest;
+		// a = parseFloat(prompt("Enter a value"));
+		// b = parseFloat(prompt("Enter b value"));
+		// c = parseFloat(prompt("Enter c value"));
+		// largest=Math.max(a,b,c);
+		// document.write("Largest among 3 number :" +largest);
+
+		//Check Prime Number
+
+		// var num = parseInt(prompt("Enter the number"));
+		// 	var result;
+		// 	if (num == '0') {
+		// 		document.write("NOr prime neither composite" + num);
+
+		// 	}
+		// 	else if (num > 1) {
+		// 		let i = 3;
+		// 		result=num %i;
+		// 		if(result == 0){
+		// 			document.write("Enterd number" + num + "is not prime");
+		// 		}
+		// 		else{
+		// 			document.write("Enterd number" + num + "is  prime");
+		// 		}
+		// 	}
+		
+		//Print Prime Numbers
+		 var num1 = parseInt(prompt("Enter the number"));
+		  var num2 = parseInt(prompt("Enter the number"));
+		    
+		  for (let i = num1; i <= num2; i++){
+			let flag = 0;
+			  for (let j = 2; j < i; j++) {
+				  if (i%j==0) {
+					  flag=1;
+					  break;
+					  
+				  }
+				  
+	  }
+	  if(i > 1 && flag == 0)
+	  document.write(i)		  
+		  }
+
+
+	
+
+
 
 
 	</script>
