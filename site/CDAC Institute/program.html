@@ -68,7 +68,7 @@
 		// if(discrement > 0){
 		// 	root1 = (-b+Math.sqrt(discrement))/(2*a);
 		// 	root2 = (-b - Math.sqrt(discrement)) / (2 * a);
-		
+
 		// document.write("Quadratic equation of root1 :" + root1 +" And root2 :" + root2);
 		// }
 		// else if(discrement == 0){
@@ -84,7 +84,7 @@
 		// 	// document.write(
 		// 	// 	`The roots of quadratic equation are ${realPart} + ${imagPart}i and ${realPart} - ${imagPart}i`
 		// 	// )
-		
+
 		// }
 
 		//Generate a Random Number
@@ -102,7 +102,7 @@
 		// }
 		// else if (b > a && b > c) {
 		// 	document.write("Largest number :" + b);
-			
+
 		// } else {
 		// 	document.write("Largest number :" + c);
 		// }
@@ -127,34 +127,372 @@
 		// 		let i = 3;
 		// 		result=num %i;
 		// 		if(result == 0){
-		// 			document.write("Enterd number" + num + "is not prime");
+		// 			document.write("Entered number" + num + "is not prime");
 		// 		}
 		// 		else{
-		// 			document.write("Enterd number" + num + "is  prime");
+		// 			document.write("Entered number" + num + "is  prime");
 		// 		}
 		// 	}
+
+		//Multiplication Table Up to 10
+		// var n = parseInt(prompt("Enter a number"));
+		// var result;
+		// for (let i = 1; i <= 10; i++) {
+		// 	result = n * i;
+		// 	document.write(n + " X " + i + " = " + result + "<br>");
+
+		// }
+
+		//Find Factorial
+		// var fact = 1;
+		// var n = parseInt(prompt("Enter  the number :"));
+		// if (n <= 0) {
+		// 	document.write("Error ! number should be greater than 0");
+		// } else {
+		// 	for (let i = 1; i <= n; i++) {
+		// 		fact = fact * i;
+
+
+		// 	}
+		// 	document.write(fact);
+		// }
+
+		//JavaScript Program to Print the Fibonacci Sequence
+		// var n = parseInt(prompt("Enter a number"));
+		// var n1 = 0,n2 = 1,nxtTerm;
+
+		// for (let i = 0; i <= n; i++) {
+		// 	document.write(n1+ "<br>");
+		// 	nxtTerm = n1 + n2;
+		// 	n1=n2;
+		// 	n2=nxtTerm;
+
+
+		// }
+
+		//Check Armstrong Number of Three Digits
+		// 	var n = parseInt(prompt("ENter a number"));
+		// 	var rem,rev = 0;
+		// 	var temp = n;
+		// 	document.write(temp);
+		// 	while(n!=0){
+		// 		rem = n % 10;
+		// 		rev += rem * rem * rem;
+		// 		n = parseInt(n/10);
+		// 	}
+		// 	if(temp == rev){
+		// 	document.write("It is armstrong number");
+		// }
+		// else{
+		// 	document.write("Not an armstrong number");
+		// }
+
+		//Check Armstrong Number of Three Digits using power function
+		// var n = parseInt(prompt("ENter a number"));
+		// var rem,temp, rev = 0;;
+		// temp= n;
+		// while (n != 0){
+		// 	rem = n % 10;
+		// 	rev +=Math.pow(rem,3);
+		// 	n = parseInt(n / 10);
+
+		// }
+		// if (temp == rev) {
+		// 	document.write("It is armstrong number");
+		// }
+		// else{
+		// 	document.write("Not an armstrong number");
+		// }
+
+		// Armstrong Numbers Between Two Intervals
+		// var n1 = parseInt(prompt("ENter a number"));
+		// var n2 = parseInt(prompt("ENter a number"));
+		// var rem, temp, rev = 0;;
+		// for (let i = n1; i <= n2; i++) {
+
+		// 	temp = j;
+		// 	while (n1 > 0 && n2 > n1) {
+		// 		rem = temp % 10;
+		// 		rev += Math.pow(rem, 3);
+		// 		tem = parseInt(temp / 10);
+
+		// 	}
+		// 	if (temp == i) {
+		// 		document.write("i");
+		// 	}
+
+		// }
+
+		//Simple Calculator with if..else if...else
+
+		// var n1 = parseInt(prompt("Enter first number"));
+		// var n2 = parseInt(prompt("Enter first number"));
+		// var operators = prompt("Enter operator");
+		// var result;
+		// document.write("Basic Calculator");
+		// document.write("<br>");
+
+		// if (operators == "+") {
+		// 	result = n1 + n2;
+		// }
+		// else if (operators == "-") {
+		// 	result = n1 * n2;
+		// }
+		// else if (operators == "*") {
+		// 	result = n1 * n2;
+		// }
+		// else {
+		// 	result = n1 / n2;
+		// }
+		// document.write("Result of above number " + n1 + " " + operators + " " + n2 + " are " + result);
+
+		//Simple Calculator with Switch Statement
+
+		// var n1 = parseInt(prompt("Enter first number"));
+		// var n2 = parseInt(prompt("Enter first number"));
+		// const operator =prompt("Enter operator");
+		// var result;
+		// switch (operator) {
+		// 	case '+':
+		// 		result = n1 + n2;
+		// 			document.write("Result of above number " + n1 + " " + operator + " " + n2 + " are " + result);
+		// 		break;
+		// 		case  '-':
+		// 		result = n1 - n2;
+		// 			document.write("Result of above number " + n1 + " " + operator + " " + n2 + " are " + result);
+		// 		break;
+		// 		case '*':
+		// 		result = n1 * n2;
+		// 			document.write("Result of above number " + n1 + " " + operator + " " + n2 + " are " + result);
+		// 		break;
+		// 		case '/':
+		// 		result = n1 / n2;
+		// 			document.write("Result of above number " + n1 + " " + operator + " " + n2 + " are " + result);
+		// 		break;
+		// 	default :
+		// 		document.write("invalid operator");
+		// 		break;
+		// }
+
+		//Sum of Natural Numbers Using for Loop
+		// var sum = 0;
+		// var n = parseInt(prompt("Enter the largest number"));
+		// for (let i = 1; i <= n; i++) {
+
+		// 	sum = sum+ i;
+		// document.write(sum +"<br>")	;
+		// }
+
+		//Sum of Natural Numbers Using while Loop
+		// var sum = 0;i=1;
+		// var n = parseInt(prompt("Enter the largest number"));
+		// while (i<=n) {
+		// 		sum = sum + i;
+		// 		document.write(sum + "<br>");
+		// }
+
+		//Check the Last Digit
+		// var n1 = parseInt(prompt("Enter the first number"));
+		// var n2 = parseInt(prompt("Enter the second number"));
+		// var n3 = parseInt(prompt("Enter the third number"));
+		// var result1, result2, result3;
+
+		// result1= n1 % 10;
+		// result2= n2 % 10;
+		// result3= n3 % 10;
+
+		// if(result1 == result2 && result1 == result3)
+		// {
+		// 	document.write("Last digit of" +n1+ " " +n2+ " " +n3+ "are same");
+		// }
+		// else {
+		// 	document.write("Last digit of " + n1 + "<br> " + n2 + " <br>" + n3 + " <br>are  not same");
+		// }
+
+		//Find HCF using for Loop
+		// var n1 = parseInt(prompt("Enter first number"));
+		// var n2 = parseInt(prompt("Enter first number"));
+		// var hcf;
+		// for (let i = 0; i <= n1 && i<= n2; i++) {
+		// 	if (n1 % i == 0  && n2 % i == 0) {
+		// 		hcf =i;
+		// 	}
+
+		// }
+		// document.write("Highest common factor for " + n1 + " and " + n2 + "are" + hcf);
+
+		//LCM program
+		// const num1 = prompt('Enter a first positive integer: ');
+		// 	const num2 = prompt('Enter a second positive integer: ');
+
+		// 	// higher number among number1 and number2 is stored in min
+		// 	let min = (num1 > num2) ? num1 : num2;
+		// 	console.log("min :"+min);
+
+		// 	// while loop
+		// 	while (true) {
+		// 		if (min % num1 == 0 && min % num2 == 0) {
+		// 			console.log(`The LCM of ${num1} and ${num2} is ${min}`);
+		// 			break;
+		// 		}
+		// 		min++;
+		// 	}
+
+		//Find Factorial Using Recursion
+
+		// var num = parseInt(prompt("Enter a number"));
+		// if(num >= 0){
+		// 	let result = factorial(num);
+		// 	document.write("factorial of given number :" +result);
+		// }
+		// else {
+		// 	document.write("Please enter a positive number");
+		// }
+
+		// function factorial(num) {
+		// 	if (num==0) {
+		// 		return 1;
+		// 	}
+		// 	else{
+		// 		return num * factorial(num - 1);
+
+		// 	}
+
+		// }
+
+		//Convert Decimal to Binary
+
+		// var num = parseInt(prompt("Enter a number"));
+		// binary(num);
+
+
+
+		// function binary(x) {
+		// 	let rem,bin = 0,i=1;
+		// 	while(x != 0){
+		// 		rem = x % 2;
+		// 		x = parseInt(x/2);
+		// 		bin = bin + rem * i;
+		// 		i = i *10;
+
+		// 	}
+		// 	document.write("Final binary number is "+ bin);
+		// }
+
+		// Convert Decimal to Binary Using toString()
+		// var num = parseInt(prompt("Enter a number"));
+
+		// var result = num.toString(2);
+		// document.write("Binary number :" +result);
+
+
+		//Check Palindrome Using for Loop
+		// var string = prompt("Enter a String");
+
+
+		// let FinalString = StrPalindrome(string);
+		// document.write(FinalString);
+
+		// function StrPalindrome(str) {
+		// 	var len = str.length;
+		// 	for (let i = 0; i < len / 2; i++) {
+		// 		if (str[i] !== str[len - 1 - i]) {
+		// 			return "It is not palindrome";
+		// 		}
+		// 		else {
+		// 			return "It is  palindrome";
+		// 		}
+
+		// 	}
+		// }
+
+		// Reverse a String Using for Loop
+		// var string = prompt("Enter a string");
+		// reverse(string);
+
+		// function reverse(string) {
+		// 	let newString;
+		// 	for (let i = string.length - 1 ; i >= 0; i--){
+		// 		 newString = newString + string[i];
+
+		// 	}
+		// 	document.write("Reverse String :c" +newString);
+		// }
+
+
+		//Reverse a String Using built-in Methods
+		// function rev(string) {
+		// 	var a = string.split("");
+		// 	var b = a.reverse();
+		// 	var c = b.join("");
+		// 	document.write("Reverse of string is " +c);
+		// }
+
+		// var string = prompt("Enter a string");
+		// rev(string);
+
+
+		//first and last character
+		// var str = prompt("Enter a string");
+		// var a = str.charAt(0)
+		// var b = str.charAt(str.length-1);
+
+		// document.write("First character of enetered string is " +a+ " and last charaxter of enetered string is " +b);
+
+
+		//Check if Key Exists in Object Using in Operator
+		// const person = {
+		// 	fname: "Aniket",
+		// 	lname: "Sawant",
+		// 	age: 24
+
+		// }
+
+		// let haskey;
+
+
+		// haskey = 'fname' in person;
+
+
+
+		// if (haskey) {
+		// 	document.write("It is present");
+		// }
+		// else {
+		// 	document.write("It is not present");
+		// }
+
+		//Cloning the object
+
+			var person1 = {
+				fname : "Aniket",
+				lname : "Sawant",
+				age : 24,
+				Qualifcation :{
+					SSC : 'Adarsha Vidyalaya',
+					Diploma : 'Babasaheb Gawde Institute of Technology',
+					Engineering :  'Padmabushan Vasantdada Patil Prathisthas College of Engineering'
+				}
+			};
+
+			var person2 = person1;
+
+		   console.log(JSON.stringify(person1));
+			document.write(person1);
+
+			  console.log(JSON.stringify(person2));
+				document.write(person2);
+
+				 person2.Qualifcation.SSC = "Menon";
+				// var a = person2.Qualifcation.SSC;
+				// document.write(a);
+				//  console.log(a);
+				 document.write(person2.Qualifcation.Diploma);
+				 console.log(person2.Qualifcation.Diploma);
+
+
+
 		
-		//Print Prime Numbers
-		 var num1 = parseInt(prompt("Enter the number"));
-		  var num2 = parseInt(prompt("Enter the number"));
-		    
-		  for (let i = num1; i <= num2; i++){
-			let flag = 0;
-			  for (let j = 2; j < i; j++) {
-				  if (i%j==0) {
-					  flag=1;
-					  break;
-					  
-				  }
-				  
-	  }
-	  if(i > 1 && flag == 0)
-	  document.write(i)		  
-		  }
-
-
-	
-
 
 
 

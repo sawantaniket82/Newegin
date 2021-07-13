@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script>
+        function add() {
+            var x = document.forms['f'].a.value;
+            var y = document.forms['f'].b.value;
+            var adds = parseInt(x) + parseInt(y);
+            document.forms['f'].c.value = adds;
+
+        }
+        function subtract() {
+            var x = document.forms['f'].a.value;
+            var y = document.forms['f'].b.value;
+            var sub = parseInt(x) - parseInt(y);
+            document.forms['f'].c.value = sub;
+
+        }
+        function multiply() {
+            var x = document.forms['f'].a.value;
+            var y = document.forms['f'].b.value;
+            var mul = parseInt(x) * parseInt(y);
+            document.forms['f'].c.value = mul;
+
+        }
+        function divide() {
+            var x = document.forms['f'].a.value;
+            var y = document.forms['f'].b.value;
+            var div = parseInt(x) / parseInt(y);
+            document.forms['f'].c.value = div;
+
+        }
+        function rem() {
+            var x = document.forms['f'].a.value;
+            var y = document.forms['f'].b.value;
+            var re = parseInt(x) % parseInt(y);
+            document.forms['f'].c.value = re;
+
+        }
+    </script>
+</head>
+
+<body>
+    <form name="f">
+        <input type="text" name="a" placeholder="Enter 1st number">
+        <input type="text" name="b" placeholder="Enter 2nd number">
+        <input type="text" name="c" placeholder="Answer">
+        <br>
+        <button type="button" value="addition" onclick="add()">addition</button>
+        <button type="button" value="subtraction" onclick="subtract()">subtraction</button>
+        <button type="button" value="multiplication" onclick="multiply()">multiplication</button>
+        <button type="button" value="division" onclick="divide()">division</button>
+        <button type="button" value="remainder" onclick="rem()">remainder</button>
+        <button type="reset"  name="r1">Reset</button><br>
+    </form>
+
+</body>
+
+</html>
