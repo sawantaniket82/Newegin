@@ -464,18 +464,18 @@
 
 		//Cloning the object
 
-			var person1 = {
+			const person1 = {
 				fname : "Aniket",
 				lname : "Sawant",
 				age : 24,
 				Qualifcation :{
 					SSC : 'Adarsha Vidyalaya',
 					Diploma : 'Babasaheb Gawde Institute of Technology',
-					Engineering :  'Padmabushan Vasantdada Patil Prathisthas College of Engineering'
+					Engineering :  ['Shah and Anchor Kutchhi Engineering College','Padmabushan Vasantdada Patil Prathisthas College of Engineering']
 				}
 			};
 
-			var person2 = person1;
+			const person2 = person1;
 
 		   console.log(JSON.stringify(person1));
 			document.write(person1);
@@ -487,7 +487,8 @@
 				// var a = person2.Qualifcation.SSC;
 				// document.write(a);
 				//  console.log(a);
-				 document.write(person2.Qualifcation.Diploma);
+				document.write(person2.Qualifcation.SSC);
+				 document.write(person2.Qualifcation.Engineering[0]);
 				 console.log(person2.Qualifcation.Diploma);
 
 
