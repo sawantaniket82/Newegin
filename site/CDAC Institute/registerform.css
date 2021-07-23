@@ -1,0 +1,113 @@
+*{
+  padding-right: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Raleway';
+  background-image: url(D:/Newegin/site/loginpage/images/insect-mascot-dragonfly-vector.jpg");
+}
+.rcorners1 {
+  text-align: center;
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+  padding: 20px;  
+}
+.login-form{
+  position: relative;
+  min-height: 100vh;
+  z-index: 0;
+  background-color: #0568c1;
+  padding: 40px;
+  justify-content: center;
+  display: grid;
+  grid-template-rows: 1fr auto 1fr;
+  align-items: center;
+}
+.content{
+  flex-basis: 50%;
+  padding:  3em 3em;
+  background: #fff;
+  box-shadow: 2px 9px 49px -17px rgba(0,0,0,0.1);
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+
+
+}
+
+.login-form input{
+  outline: none;
+  margin-bottom: 15px;
+  font-stretch: 16px;
+  color: #999;
+  text-align: left;
+  padding: 14px 20px;
+  width: 100%;
+  display: inline-block;
+  box-sizing: border-box;
+  border:none;
+    background: #f7fafc;
+    border:1px solid #e5e5e5;
+    transition: 0.3s ease;
+}
+.login-form input:focus{
+  background: transparent;
+  border: 1px solid #0568c1;
+}
+.btn,button,input{
+  border-radius: 35px;
+}
+.btn:hover,button:hover{
+  transition: 0.5s ease;
+}
+.login-form input{
+  outline: none;
+  margin-bottom: 15px;
+  font-stretch: 16px;
+  color: #999;
+  text-align: left;
+  padding: 14px 20px;
+  width: 100%;
+  display: inline-block;
+  box-sizing: border-box;
+  border:none;
+    background: #f7fafc;
+    border:1px solid #e5e5e5;
+    transition: 0.3s ease;
+}
+.login-form input:focus{
+  background: transparent;
+  border: 1px solid #0568c1;
+}
+.login-form button{
+  font-size: 18px;
+  color: #fff;
+  width: 100%;
+  background: #0568c1;
+  border: none;
+  padding: 14px 15px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+.login-form button:hover{
+  background:#fdc500;
+}
+.form-img
+{
+  flex-basis: 50%;
+  background: #f4f9fd;
+  background-size: cover;
+  padding: 40px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  align-items: center;
+  display: grid;
+}
+.form-img img{
+  max-width: 100%;
+}
+.main{
+  position: relative;
+  display: flex;
+  margin: 30px 0;
+}
