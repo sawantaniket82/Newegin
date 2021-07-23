@@ -462,38 +462,231 @@
 		// 	document.write("It is not present");
 		// }
 
-		//Cloning the object
-
-			const person1 = {
-				fname : "Aniket",
-				lname : "Sawant",
-				age : 24,
-				Qualifcation :{
-					SSC : 'Adarsha Vidyalaya',
-					Diploma : 'Babasaheb Gawde Institute of Technology',
-					Engineering :  ['Shah and Anchor Kutchhi Engineering College','Padmabushan Vasantdada Patil Prathisthas College of Engineering']
-				}
-			};
-
-			const person2 = person1;
-
-		   console.log(JSON.stringify(person1));
-			document.write(person1);
-
-			  console.log(JSON.stringify(person2));
-				document.write(person2);
-
-				 person2.Qualifcation.SSC = "Menon";
-				// var a = person2.Qualifcation.SSC;
-				// document.write(a);
-				//  console.log(a);
-				document.write(person2.Qualifcation.SSC);
-				 document.write(person2.Qualifcation.Engineering[0]);
-				 console.log(person2.Qualifcation.Diploma);
+		// //Cloning the object
 
 
+		// 	const person1 = {
+		// 		fname : "Aniket",
+		// 		lname : "Sawant",
+		// 		age : 24,
+		// 		Qualifcation :{
+		// 			SSC : 'Adarsha Vidyalaya',
+		// 			Diploma : 'Babasaheb Gawde Institute of Technology',
+		// 			Engineering :  ['Shah and Anchor Kutchhi Engineering College','Padmabushan Vasantdada Patil Prathisthas College of Engineering']
+		// 		}
+		// 	};
 
+		// 	const person2 = person1;
+
+		//    console.log(JSON.stringify(person1));
+		// 	document.write(person1);
+
+		// 	  console.log(JSON.stringify(person2));
+		// 		document.write(person2);
+
+		// 		 person2.Qualifcation.SSC = "Menon";
+		// 		// var a = person2.Qualifcation.SSC;
+		// 		// document.write(a);
+		// 		//  console.log(a);
+		// 		delete person2.Qualifcation.Diploma;
+		// 		document.write(person2.Qualifcation.SSC);
+		// 		 document.write(person2.Qualifcation.Engineering);
+		// 		 console.log(person2.Qualifcation.Diploma);
+
+
+		//Count the Number of Vowels Using for Loop
+
+		// var str = prompt("Enter a string");
+		// //var vowels = ['a', 'e', 'i', 'o', 'u'];
+
+
+
+		// function countVowels(str) {
+		// 	let count = 0;
+		// 	for (let i = 0; i < str.length; i++) {
+		// 		var letter = str.charAt(i);
+		// 		if (letter == 'a' || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u') {
+		// 			count++;
+		// 		}
+		// 	}
+		// 	return count;
+		// }
+
+
+		// var result = countVowels(str);
+		// document.write("Number of vowels are " + result);
+
+		//trial program
+
+		// const person1 = {
+		// 		fname : "Aniket",
+		// 		lname : "Sawant",
+		// 		age : 24,
+		// 		Qualifcation :{
+		// 			SSC : 'Adarsha Vidyalaya',
+		// 			Diploma : 'Babasaheb Gawde Institute of Technology',
+		// 			Engineering :  ['Shah and Anchor Kutchhi Engineering College','Padmabushan Vasantdada Patil Prathisthas College of Engineering']
+		// 		}
+		// 	};
+
+
+		// 	for (const x in person1) {
+		// 		let key = person1[x];
+		// 		document.write(key);
+		// }
+
+
+		//Square pattern
+
+		// var n = parseInt(prompt("Enter no of rows"));
+		// for (let i = 1; i <= n; i++) {
+		// 	for (let j = 1; j <= n; j++) {
+		// 		document.write("*");
+
+		// 	}
+		// 	document.write("<br>");	
+		// }
+
+		// Right triangle pattern in javascript
+		// var n = parseInt(prompt("Enter no of rows"));
+		// for (let i = 1; i <= n; i++) {
+		// 	for (let j = 1; j <= i; j++) {
+		// 		document.write("*");
+
+		// 	}
+		// 	document.write("<br>");
+		// }
+
+		//Left triangle pattern in javascript
+		// var n = parseInt(prompt("Enter no of rows"));
+		// for (let i = 1; i <= n; i++) {
+		// 	for (let space = 1; space <= n - i; space++) {
+		// 		document.write("-");
+
+		// 	}
+		// 	for (let j = 1; j <= i; j++) {
+		// 		document.write("*");
+
+		// 	}
+		// 	document.write("<br>");
+
+		// }
+
+
+		//Downward Triangle Star Pattern
+		// var n = parseInt(prompt("Enter no of rows"));
+		// for (let i = 1; i <= n; i++) {
+		// 	for (let j = n; j >= i; j--) {
+		// 		document.write("*");
+
+		// 	}
+		// 	document.write("<br>")
+		// }
+
+		//JavaScript Number 0 Patterns
+		// for (let i = 1; i <= 5; i++) {
+		// 	for (let j = 1; j <= i; j++) {
+		// 		document.write("0" +j+ " ");
+
+		// 	}
+		// 	document.write("<br>");			
+		// }
+
+
+		//Javascript Same number line pattern
+
+		// for (let i = 1; i <= 5; i++) {
+		// 	for (let j = 1; j <= i ; j++) {
+
+		// 		document.write(i);
+
+		// 	}
+		// 	document.write("<br>");
+		// }
+
+		//Javascript triangle pattern
+		// var i,j;
+		// for ( i = 1; i <= 5; i++) {
+		// 	for ( j = 1; j <= i; j++) {
+
+		// 		document.write(j);
+
+		// 	}
+		// 	document.write("<br>");
+		// }
+
+		// for ( i = 5-1; i >= 1; i--) {
+		// 	for ( j = 1; j <= i; j++) {
+
+		// 		document.write(j);
+
+		// 	}
+		// 	document.write("<br>");
+		// }
+
+		//Javascript two triangle progaram
+		// var n = 6;
+		// for (let i = 1; i <= n; i++) {
+		// 	for (let j = 1; j <= n - i; j++) {
+		// 		document.write(j);
+
+		// 	}
+		// 	document.write("<br>");
+		// }
+		// for (let i = 1; i < n; i++) {
+
+
+		// 	for (let j = 1; j <= i; j++) {
+
+
+		// 		document.write(j);
+		// 	}
+		// 	document.write("<br>");
+		// }
+
+		///1 0 pattern
+
+		// var n = 5;
+		// for (let i = 0; i <= n; i++) {
+
+		// 	for (let j = i; j <= i * 2; j++) {
+
+		// 		if (j % 2 == 0) {
+		// 			document.write('0')
+		// 		}
+		// 		else {
+		// 			document.write('1');
+		// 		}
+
+		// 	}
+		// 	document.write("<br>");
+		// }
+
+		//number pattern
+			var n = 5,a=1;
+			
+		for (let i = 1; i <= n; i++) {
 		
+			
+			for (let j = 1; j <= i; j++) {
+				document.write(a);
+				   a +=1;
+					
+
+					console.log(a);
+				
+				
+
+			}
+			document.write("<br>");
+		}
+
+
+
+
+
+
+
 
 
 
