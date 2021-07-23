@@ -892,16 +892,68 @@
 		// }
 		// else
 		// 	console.log("Welcome "+a);
+		//---------------------------------------
 
 
-		var a = ["Aniket", "Sarvesh", "Prathamesh", "Subodh", "Omkar", "Nikhil"];
-		for (let i = 0; i < a.length; i++) {
-			if (a[i].includes(("S")) {
-				console.log("Hello " + a[i]);
+
+		// var a = ["Aniket", "Sarvesh", "Prathamesh", "Subodh", "Omkar", "Nikhil"];
+		// for (let i = 0; i < a.length; i++) {
+		// 	if (a[i].includes(("S")) {
+		// 		console.log("Hello " + a[i]);
+		// 	}
+		// 	else console.log("Welcome " + a[i]);
+
+		// }
+
+		//-----------Arrow Function-------
+
+
+		// calculation = () => {
+		// 	var a = 10;
+		// 	var b = 20;
+		// 	var result = a + b;
+		// 	return result;
+		// }
+		// console.log(calculation());
+
+		///--------Arrow function with partmeter
+
+		var calculation = (a, b) => {
+			switch (operator) {
+				case '+':
+					var add = a + b;
+					console.log("Addition ofnumber are " + add);
+					break;
+				case '-':
+					var sub = a - b;
+					console.log("Sbtraction ofnumber are " + sub);
+					break;
+				case '*':
+					var mul = a * b;
+					console.log("multiplication of number are " + mul);
+					break;
+				case '/':
+					var div = a / b;
+					console.log("Division  of number are " + div);
+					break;
+				default:
+					return console.log(a+ " " +b);
+					//console.log("invalid operator");
+					break;
 			}
-			else console.log("Welcome " + a[i]);
+			
+		};
 
-		}
+
+		var operator = prompt("Enter operator");
+		if(operator == '!' || operator == '@' || operator == '#' || operator == '$' || operator == '%' || operator == '^' || operator == '&' || operator == '(' || operator == ')' || operator == '_' || operator == '[' || operator == ']' || operator == '\'' )
+		console.log("Please enter valid operator");
+		//var a = prompt(parseInt("Enter 1st number :");
+		//var b = prompt(parseInt("Enter 2st number :");
+		var final_result = calculation(5, 2);
+		
+
+
 
 	</script>
 </body>
