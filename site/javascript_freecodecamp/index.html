@@ -895,18 +895,18 @@
 		//---------------------------------------
 
 
-<<<<<<< HEAD
 
-=======
->>>>>>> b917d5c1ad399673e03dd125b38fbf0ed479e0eb
 		// var a = ["Aniket", "Sarvesh", "Prathamesh", "Subodh", "Omkar", "Nikhil"];
+		// debugger;
 		// for (let i = 0; i < a.length; i++) {
-		// 	if (a[i].includes(("S")) {
-		// 		console.log("Hello " + a[i]);
-		// 	}
-		// 	else console.log("Welcome " + a[i]);
-<<<<<<< HEAD
+		// 	if (a[i].search("/\bS/ig")) 
 
+		// 	{
+		// 		console.log("Hello " +a[i]);
+		// 	}
+		// 	else {
+		// 		console.log("Welcome " +a[i]);
+		// 	}
 		// }
 
 		//-----------Arrow Function-------
@@ -922,48 +922,347 @@
 
 		///--------Arrow function with partmeter
 
-		var calculation = (a, b) => {
-			switch (operator) {
-				case '+':
-					var add = a + b;
-					console.log("Addition ofnumber are " + add);
-					break;
-				case '-':
-					var sub = a - b;
-					console.log("Sbtraction ofnumber are " + sub);
-					break;
-				case '*':
-					var mul = a * b;
-					console.log("multiplication of number are " + mul);
-					break;
-				case '/':
-					var div = a / b;
-					console.log("Division  of number are " + div);
-					break;
-				default:
-					return console.log(a+ " " +b);
-					//console.log("invalid operator");
-					break;
-			}
-			
-		};
+		// var calculation = (a, b) => {
+		// 	switch (operator) {
+		// 		case '+':
+		// 			var add = a + b;
+		// 			console.log("Addition ofnumber are " + add);
+		// 			break;
+		// 		case '-':
+		// 			var sub = a - b;
+		// 			console.log("Sbtraction ofnumber are " + sub);
+		// 			break;
+		// 		case '*':
+		// 			var mul = a * b;
+		// 			console.log("multiplication of number are " + mul);
+		// 			break;
+		// 		case '/':
+		// 			var div = a / b;
+		// 			console.log("Division  of number are " + div);
+		// 			break;
+		// 		default:
+		// 			return console.log(a + " " + b);
+		// 			//console.log("invalid operator");
+		// 			break;
+		// 	}
+
+		// };
 
 
-		var operator = prompt("Enter operator");
-		if(operator == '!' || operator == '@' || operator == '#' || operator == '$' || operator == '%' || operator == '^' || operator == '&' || operator == '(' || operator == ')' || operator == '_' || operator == '[' || operator == ']' || operator == '\'' )
-		console.log("Please enter valid operator");
-		//var a = prompt(parseInt("Enter 1st number :");
-		//var b = prompt(parseInt("Enter 2st number :");
-		var final_result = calculation(5, 2);
-		
+		// var operator = prompt("Enter operator");
+		// if (operator == '!' || operator == '@' || operator == '#' || operator == '$' || operator == '%' || operator == '^' || operator == '&' || operator == '(' || operator == ')' || operator == '_' || operator == '[' || operator == ']' || operator == '\'')
+		// 	console.log("Please enter valid operator");
+		// //var a = prompt(parseInt("Enter 1st number :");
+		// //var b = prompt(parseInt("Enter 2st number :");
+		// var final_result = calculation(5, 2);
+
+		//Arrow function without parameter
 
 
-=======
+		// var calculation = () => {
+		// 	switch (operator) {
+		// 		case '+':
+		// 			let add = a + b;
+		// 			document.write("Addition ofnumber are " + add);
+		// 			break;
+		// 		case '-':
+		// 			let sub = a - b;
+		// 			document.write("Sbtraction ofnumber are " + sub);
+		// 			break;
+		// 		case '*':
+		// 			let mul = a * b;
+		// 			document.write("multiplication of number are " + mul);
+		// 			break;
+		// 		case '/':
+		// 			let div = a / b;
+		// 			document.write("Division  of number are " + div);
+		// 			break;
+		// 		default:
+
+		// 			return "invalid";
+
+
+
+		// 	}
+
+		// };
+
+
+		// let operator = prompt("Enter operator");
+		// while (operator != '!' || operator != '@' || operator != '#' || operator != '$' || operator != '%' || operator != '^' || operator != '&' || operator != '(' || operator != ')' || operator != '_' || operator != '[' || operator != ']' || operator != '\'') {
+		// 	if (operator == '!' || operator == '@' || operator == '#' || operator == '$' || operator == '%' || operator == '^' || operator == '&' || operator == '(' || operator == ')' || operator == '_' || operator == '[' || operator == ']' || operator == '\'') {
+		// 	alert("invalid Opeartor");
+		// 	break;	
+		// 	}
+		// 	else{
+		// 		continue;
+		// 	}
+
+
 
 		// }
 
-		
->>>>>>> b917d5c1ad399673e03dd125b38fbf0ed479e0eb
+
+		// let a = parseInt(prompt("Enter 1st number :"));
+		// let b = parseInt(prompt("Enter 2st number :"));
+		// let final_res = calculation();
+		// document.write(final_res);
+
+		//Regular Expresiion
+
+		// var a = "Hello World helLo universe";
+		// var b = a.match(/lo/gi);
+		// console.log(b);
+
+		//-----------------------------------------
+		// var a = "Hello World helLo universe";
+		// var b = a.replace("World", "Newegin");
+		// console.log(b);
+
+
+		// var c = /[\s,]+/g;
+		// var d = "Hello World" .split(c);
+		// console.log(d);
+
+		//-----------------------------------------------
+		// var a = "hello world 123548764d  sd548"
+		// var b = /(\d{3})-(\d{3})-(\d{4})/g;
+		// var c = b.exec(a)
+		// console.log(c);
+
+
+		//------------------------------------------
+
+		// var a  = prompt("Enter a string");
+		// if(a.charAt(0) == 'J' || a.charAt(0) == 'j'){
+		// 	document.write("hello " +a);
+		// }
+		// else{
+		// 	document.write("Welcome " + a);
+		// }
+
+
+		//-----Callback Function
+		// let stocks = {
+		// 	Fruits: ["Apple", "strawberry", "Mango"],
+		// 	Creams: ["Choclate", "Vannilla", "BuuterScotch"],
+		// 	Holder: ["cone", "sticks", "cup"],
+		// 	Topping: ["Sprinkle", "Candy", "peanuts"],
+		// 	liquids: ["water", "ice"]
+		// };
+
+		// function order(Fruit_name, call_production) {
+		// 	setTimeout(() => {
+		// 		console.log(stocks.Fruits[Fruit_name] + " was selected");
+		// 		call_production();
+		// 	}, 2000);
+		// }
+
+		// function production() {
+		// 	setTimeout(() => {
+		// 		console.log("Order Recieved,production ha started");
+
+		// 		setTimeout(() => {
+		// 			console.log("Fruits has been chopped");
+
+		// 			setTimeout(() => {
+		// 				console.log(`${stocks.liquids[0]} and ${stocks.liquids[1]} was added`);
+
+		// 				setTimeout(() => {
+		// 					console.log("the machine has been started");
+
+		// 					setTimeout(() => {
+		// 						console.log(`${stocks.Holder[0]} was selected`);
+
+		// 						setTimeout(() => {
+		// 							console.log(`${stocks.Topping[0]} was added as toppings`);
+
+		// 							setTimeout(() => {
+		// 								console.log("Serve the ice cream");
+		// 							}, 2000);
+		// 						}, 3000);
+		// 					}, 2000);
+		// 				}, 1000);
+		// 			}, 1000);
+		// 		}, 2000);
+		// 	}, 0000);
+		// }
+
+		// order(0, production);
+
+		//-----Promises functio using then,ctach,finally----
+		// let stocks = {
+		// 	Fruits: ["Apple", "strawberry", "Mango"],
+		// 	Creams: ["Choclate", "Vannilla", "BuuterScotch"],
+		// 	Holder: ["cone", "sticks", "cup"],
+		// 	Topping: ["Sprinkle", "Candy", "peanuts"],
+		// 	liquids: ["water", "ice"]
+		// };
+
+		// let is_shop_open = false;
+		// let order = (time, work) => {
+		// 	return new Promise((resolve, reject) => {
+		// 		if (is_shop_open) {
+		// 			setTimeout(() => {
+		// 				resolve(work());
+		// 			}, time);
+		// 		} else {
+		// 			reject(console.log("Shop is closed"));
+		// 		}
+		// 	});
+		// };
+
+		// order(2000, () => console.log(`${stocks.Fruits[0]} was selected`))
+		// 	.then(() => {
+		// 		return order(1000, () => console.log("Production started"));
+		// 	})
+		// 	.then(() => {
+		// 		return order(0000, () => console.log("Fruit has been choopped"));
+		// 	})
+		// 	.then(() => {
+		// 		return order(2000, () =>
+		// 			console.log(`${stocks.liquids[0]} and  ${stocks.liquids[1]} is added`)
+		// 		);
+		// 	})
+		// 	.then(() => {
+		// 		return order(1000, () => console.log("Machine started"));
+		// 	})
+		// 	.then(() => {
+		// 		return order(2000, () =>
+		// 			console.log(`${stocks.Holder[1]} was selected as container`)
+		// 		);
+		// 	})
+		// 	.then(() => {
+		// 		return order(1000, () =>
+		// 			console.log(`Topping should be  ${stocks.Topping[0]}`)
+		// 		);
+		// 	})
+		// 	.then(() => {
+		// 		return order(2000, () => console.log("Ice Cream is served"));
+		// 	})
+
+		// 	.catch(() => console.log("Customer Left"))
+
+		// 	.finally(() => console.log("Day eneded ,Shop is closed"));
+
+
+		//----Async Function----
+		// let stocks = {
+		// 	Fruits: ["Apple", "strawberry", "Mango"],
+		// 	Creams: ["Choclate", "Vannilla", "BuuterScotch"],
+		// 	Holder: ["cone", "sticks", "cup"],
+		// 	Topping: ["Sprinkle", "Candy", "peanuts"],
+		// 	liquids: ["water", "ice"]
+		// };
+
+		// async function order() {
+		// 	try {
+		// 		await abc;
+		// 	} catch (error) {
+		// 		console.log(" abc does not exist");
+		// 	} finally {
+		// 		console.log("Run code anyway");
+		// 	}
+		// }
+
+		// order().then(() => {
+		// 	console.log("Hello Again");
+		// });
+
+		///---Await Function
+		// let stocks = {
+		// 	Fruits: ["Apple", "strawberry", "Mango"],
+		// 	Creams: ["Choclate", "Vannilla", "BuuterScotch"],
+		// 	Holder: ["cone", "sticks", "cup"],
+		// 	Topping: ["Sprinkle", "Candy", "peanuts"],
+		// 	liquids: ["water", "ice"]
+		// };
+
+		// let topping = () => {
+		// 	return new Promise((resolve, reject) => {
+		// 		setTimeout(() => {
+		// 			resolve(console.log("What topping would you like"));
+		// 		}, 3000);
+		// 	});
+		// };
+
+		// async function kitchen() {
+		// 	console.log("A");
+		// 	console.log("B");
+		// 	console.log("C");
+
+		// 	await topping();
+		// 	console.log("D");
+		// 	console.log("E");
+		// }
+		// kitchen();
+		// console.log("dOING THE DISHES");
+		// console.log("Cleaning Tables");
+		// console.log("taking other order");
+
+
+		//----Await and Async Function
+		let stocks = {
+			Fruits: ["Apple", "strawberry", "Mango"],
+			Creams: ["Choclate", "Vannilla", "BuuterScotch"],
+			Holder: ["cone", "sticks", "cup"],
+			Topping: ["Sprinkle", "Candy", "peanuts"],
+			liquids: ["water", "ice"]
+		};
+
+		let is_shop_open = false;
+
+		function time(ms) {
+			return new Promise((resolve, reject) => {
+				if (is_shop_open) {
+					setTimeout(resolve, ms);
+				} else {
+					reject(console.log("Shop is closed"));
+				}
+			});
+		}
+
+		async function kitchen() {
+			try {
+				await time(2000);
+				console.log(`${stocks.Fruits[2]} was selected`);
+
+				console.log("Production has started");
+
+				await time(2000);
+				console.log("Fruit has been chopped");
+
+				await time(1000);
+				console.log(`${stocks.liquids[0]} ad ${stocks.liquids[0]} was added`);
+
+				await time(2000);
+				console.log(`${stocks.Topping[0]} was selected`);
+
+				await time(1000);
+				console.log("Machine Started");
+
+				await time(3000);
+				console.log(`${stocks.Holder[0]} was selected as container`);
+
+				await time(2000);
+				console.log("Ice Cream is Served");
+			} catch (error) {
+				console.log("Customer left");
+			} finally {
+				console.log("Day ended,shop is closed for the day");
+			}
+		}
+
+		kitchen();
+
+
+
+
+
+
+
+
+
 
 	</script>
 </body>
