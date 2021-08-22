@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>login</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+  
+</head>
+<script src="./user.js"></script>
+<body>
+    <form name="f" >
+        ID : <input type="text" name="id" id="id"><br>
+        Name : <input type="text" name="name" id="name"><br>
+        Mobile no : <input type="number" name="mob" id="mob"><br>
+        Aadhar Card no : <input type="number" minlength="12" maxlength="12" name="aadhar" id="aadhar"><br>
+        PAN Card no : <input type="text number" minlength="10" maxlength="10" name="pan" id="pan"><br>
+        Address :
+        FLat no/Room no: <input type="text" name="add1" id="add1"><br>
+        Area/Road :<input type="text" name="add2" id="add2"><br>
+        City : <input type="text" name="add3" id="add3"><br>
+        Postal Code: <input type="number" name="add4" id="add4"><br>
+        Country :<select name="country" id="country"><br>
+            <option value="INDIA">India</option><br>
+            <option value="PAKISTAN">Pakistan</option><br>
+            <option value="AFGHANISTHAN">Afghanistan</option><br>
+            <option value="BANGLADESH">Bangladesh</option><br>
+            <option value="SRILANKA">Sri-Lanka</option><br>
+            <option value="NEPAL">Nepal</option><br>
+
+        </select>
+        <button type="submit" onclick="add()">ADD</button>
+        <button type="submit">DELETE</button>
+        <button type="submit">EDIT</button>
+    </form>
+
+</body>
+
+</html>
