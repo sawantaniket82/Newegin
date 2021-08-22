@@ -294,6 +294,7 @@
 		/*function compareEquality(a,b){
 			if (a===b) {
 				return "Equals";
+<<<<<<< HEAD
 		
 			}
 			return "Not euals";
@@ -508,6 +509,222 @@
 			"bolwer"["Bumrah","Shami","Chahl","Yadav","Siraj"],
 			"all rounder"["Jadeja","K Pandya","H Pandya"]
 		
+=======
+		
+			}
+			return "Not euals";
+		
+		}
+		console.log(compareEquality(10,'10'));*/
+		//---**Inequality Operator**-----
+		/*function equals(val){
+			if (val !=12) {
+				return "not equal to set value";
+			}
+			return "Yes value is correct";
+		}
+		console.log(equals(10));*/
+		//---**Strict Equality Operator**----
+		/*function equals(val){
+			if (val !==12) {
+				return "not equal to set value";
+			}
+			return "Yes value is correct";
+		}
+		console.log(equals(10));*/
+		//---**Greater Than Or Equals Operator**----
+		/*function greaterThanEqual(val){
+			if (val >= 100){
+				return "greater than 100";
+			}
+			if (val > 50) {
+				return "gretet than 50 but less than 100";
+			}
+			return "10 or Under";
+		
+		}
+		console.log(greaterThanEqual(100));*/
+		//---**Less Than Or Equals Operator**---
+		/*function lessThanEqual(val){
+			if (val >= 100){
+				return "greater than 100";
+			}
+			if (val <= 50) {
+				return "gretet than 10 but less than 50";
+			}
+			return "10 or Under";
+		
+		}
+		console.log(lessThanEqual(44));*/
+		//----**And Operator**----
+		/*function And(val){
+			if (val > 100){
+				return "greater than 100";
+			}
+			if (val >= 50 && val <=100) {
+				return "gretet than eual to  50 but less equal  than 100";
+			}
+			if (val >10 && val < 50){
+				return "Greater than 10 but less thean 50 ";
+			}
+			return "10 or Under";
+		
+		}
+		console.log(And(58));*/
+		//---**OR Operator**-----
+		/*	if (val > 100){
+				return "greater than 100";
+			}
+			if (val >= 50 || val <=100) {
+				return "gretet than eual to  50 but less equal  than 100";
+			}
+			if (val >10 || val < 50){
+				return "Greater than 10 but less thean 50 ";
+			}
+			return "10 or Under";
+		
+		}
+		console.log(OR(58));*/
+		//----**Else statement***----
+		/*function testElse(val){
+			result="";
+			if (val >= 5) {
+				result = "Greter than eqauls to 5";
+			} 
+			else {
+				result ="Less than 5";
+			}
+			return result;
+		
+		}
+		console.log(testElse(8));*/
+		//--**Else if statements**----
+		/*function ElseIf(val){
+			result="";
+			if (val > 15) {
+				result = "Greter than eqauls to 5";
+			} 
+			else if(val >=10 && val < 15 ){
+				result = "Value is betwn 10 to 15";
+			}
+			else {
+				result ="Less than 10";
+			}
+		
+			return result;
+		
+		}
+		console.log(ElseIf(11));*/
+		//---**changing if/else if staements**----
+		/*function ifelseif(val){
+			num="";
+			if (val < 5)
+			{
+				num="Tiny";
+			}
+			else if(val < 10)
+			{
+				num = "Small";
+			}
+			else if(val < 15)
+			{
+				num = "Medium";
+			}
+			else if(val < 20)
+			{
+				num = "Large";
+			}
+			else (val > 20)
+			{
+				num = "Huge";
+			}
+			return num;
+		}
+		
+		console.log(ifelseif(19));*/
+		//---**Golf code**-----
+		/*ar name =["Aniket","Sarvesh","Harshal","Paritosh","Nikhil","Prathamesh","Subodh"];
+		function golfScore(par,strokes){
+			if (strokes == 1){
+				return name[0];
+			}
+			else if (strokes <= par - 2){
+				return name[1];
+			}
+			else if (strokes == par - 1){
+				return name[2];
+			}
+			else if (strokes == par){
+				return name[3];
+			}
+			else if (strokes == par + 1){
+				return name[4];
+			}
+			else if (strokes == par + 2){
+				return name[5];
+			}
+			else if (strokes >= par + 3){
+				return name[6];
+			}
+		}
+		console.log(golfScore(0,1));*/
+
+		//--**Switch statements**----
+		/*function switchStatement(val) {
+			var answer = "";
+			switch (val) {
+				case 1:
+					answer = "alpha";
+	
+					break;
+				case 2 :		
+	
+				default:
+					break;*/
+		//---****testing object for popertie
+		/*var myObj = {
+			gift: "pony",
+			pet: "dog",
+			bed: "ikea"
+		};
+		 function checkObj(checkprop){
+			  if(myObj.hasOwnProperty(checkprop)){
+					return myObj[checkprop];
+			  }else {
+					return "NOt found"
+			  }
+		 }
+		console.log(checkObj("Pet"));*/
+		//--**Manipulating complex object**---
+
+		/*var myDreamTeam2 = [
+		{
+			"Format" :"Test"
+		[
+			"batsmen"["Rohit","Virat","Pujara","Gill","Rahane"],
+			"bolwer"["Bumrah","Shami","Ashwin","jadeja","Siraj","ishant","Umesh"],
+			"all rounder"["Jadeja","Ashwin","Vihari"]
+		
+		]
+		},
+		
+		{
+			"Format" :"Twenty"
+		[
+			"batsmen"["Rohit","Virat","Dhawan","Gill","Agarwal"],
+			"bolwer"["Bumrah","Shami","Saini","jadeja","Siraj"],
+			"all rounder"["Jadeja","Sundar","shardul"]
+		]
+		},
+		{
+		
+			"Format" :"Ooo"
+		[
+			"batsmen"["Rohit","Virat","KL Rahul","Gill","Shaw","Dhwan"],
+			"bolwer"["Bumrah","Shami","Chahl","Yadav","Siraj"],
+			"all rounder"["Jadeja","K Pandya","H Pandya"]
+		
+>>>>>>> 2ff6d8f9bfde35352a9ddadeff671aebbaf3e53e
 		]
 		}
 		
@@ -892,6 +1109,7 @@
 		// }
 		// else
 		// 	console.log("Welcome "+a);
+<<<<<<< HEAD
 
 
 		// var a = ["Aniket", "Sarvesh", "Prathamesh", "Subodh", "Omkar", "Nikhil"];
@@ -907,6 +1125,379 @@
 
 		
 		
+=======
+		//---------------------------------------
+
+
+
+		// var a = ["Aniket", "Sarvesh", "Prathamesh", "Subodh", "Omkar", "Nikhil"];
+		// debugger;
+		// for (let i = 0; i < a.length; i++) {
+		// 	if (a[i].search("/\bS/ig")) 
+
+		// 	{
+		// 		console.log("Hello " +a[i]);
+		// 	}
+		// 	else {
+		// 		console.log("Welcome " +a[i]);
+		// 	}
+		// }
+
+		//-----------Arrow Function-------
+
+
+		// calculation = () => {
+		// 	var a = 10;
+		// 	var b = 20;
+		// 	var result = a + b;
+		// 	return result;
+		// }
+		// console.log(calculation());
+
+		///--------Arrow function with partmeter
+
+		// var calculation = (a, b) => {
+		// 	switch (operator) {
+		// 		case '+':
+		// 			var add = a + b;
+		// 			console.log("Addition ofnumber are " + add);
+		// 			break;
+		// 		case '-':
+		// 			var sub = a - b;
+		// 			console.log("Sbtraction ofnumber are " + sub);
+		// 			break;
+		// 		case '*':
+		// 			var mul = a * b;
+		// 			console.log("multiplication of number are " + mul);
+		// 			break;
+		// 		case '/':
+		// 			var div = a / b;
+		// 			console.log("Division  of number are " + div);
+		// 			break;
+		// 		default:
+		// 			return console.log(a + " " + b);
+		// 			//console.log("invalid operator");
+		// 			break;
+		// 	}
+
+		// };
+
+
+		// var operator = prompt("Enter operator");
+		// if (operator == '!' || operator == '@' || operator == '#' || operator == '$' || operator == '%' || operator == '^' || operator == '&' || operator == '(' || operator == ')' || operator == '_' || operator == '[' || operator == ']' || operator == '\'')
+		// 	console.log("Please enter valid operator");
+		// //var a = prompt(parseInt("Enter 1st number :");
+		// //var b = prompt(parseInt("Enter 2st number :");
+		// var final_result = calculation(5, 2);
+
+		//Arrow function without parameter
+
+
+		// var calculation = () => {
+		// 	switch (operator) {
+		// 		case '+':
+		// 			let add = a + b;
+		// 			document.write("Addition ofnumber are " + add);
+		// 			break;
+		// 		case '-':
+		// 			let sub = a - b;
+		// 			document.write("Sbtraction ofnumber are " + sub);
+		// 			break;
+		// 		case '*':
+		// 			let mul = a * b;
+		// 			document.write("multiplication of number are " + mul);
+		// 			break;
+		// 		case '/':
+		// 			let div = a / b;
+		// 			document.write("Division  of number are " + div);
+		// 			break;
+		// 		default:
+
+		// 			return "invalid";
+
+
+
+		// 	}
+
+		// };
+
+
+		// let operator = prompt("Enter operator");
+		// while (operator != '!' || operator != '@' || operator != '#' || operator != '$' || operator != '%' || operator != '^' || operator != '&' || operator != '(' || operator != ')' || operator != '_' || operator != '[' || operator != ']' || operator != '\'') {
+		// 	if (operator == '!' || operator == '@' || operator == '#' || operator == '$' || operator == '%' || operator == '^' || operator == '&' || operator == '(' || operator == ')' || operator == '_' || operator == '[' || operator == ']' || operator == '\'') {
+		// 	alert("invalid Opeartor");
+		// 	break;	
+		// 	}
+		// 	else{
+		// 		continue;
+		// 	}
+
+
+
+		// }
+
+
+		// let a = parseInt(prompt("Enter 1st number :"));
+		// let b = parseInt(prompt("Enter 2st number :"));
+		// let final_res = calculation();
+		// document.write(final_res);
+
+		//Regular Expresiion
+
+		// var a = "Hello World helLo universe";
+		// var b = a.match(/lo/gi);
+		// console.log(b);
+
+		//-----------------------------------------
+		// var a = "Hello World helLo universe";
+		// var b = a.replace("World", "Newegin");
+		// console.log(b);
+
+
+		// var c = /[\s,]+/g;
+		// var d = "Hello World" .split(c);
+		// console.log(d);
+
+		//-----------------------------------------------
+		// var a = "hello world 123548764d  sd548"
+		// var b = /(\d{3})-(\d{3})-(\d{4})/g;
+		// var c = b.exec(a)
+		// console.log(c);
+
+
+		//------------------------------------------
+
+		// var a  = prompt("Enter a string");
+		// if(a.charAt(0) == 'J' || a.charAt(0) == 'j'){
+		// 	document.write("hello " +a);
+		// }
+		// else{
+		// 	document.write("Welcome " + a);
+		// }
+
+
+		//-----Callback Function
+		// let stocks = {
+		// 	Fruits: ["Apple", "strawberry", "Mango"],
+		// 	Creams: ["Choclate", "Vannilla", "BuuterScotch"],
+		// 	Holder: ["cone", "sticks", "cup"],
+		// 	Topping: ["Sprinkle", "Candy", "peanuts"],
+		// 	liquids: ["water", "ice"]
+		// };
+
+		// function order(Fruit_name, call_production) {
+		// 	setTimeout(() => {
+		// 		console.log(stocks.Fruits[Fruit_name] + " was selected");
+		// 		call_production();
+		// 	}, 2000);
+		// }
+
+		// function production() {
+		// 	setTimeout(() => {
+		// 		console.log("Order Recieved,production ha started");
+
+		// 		setTimeout(() => {
+		// 			console.log("Fruits has been chopped");
+
+		// 			setTimeout(() => {
+		// 				console.log(`${stocks.liquids[0]} and ${stocks.liquids[1]} was added`);
+
+		// 				setTimeout(() => {
+		// 					console.log("the machine has been started");
+
+		// 					setTimeout(() => {
+		// 						console.log(`${stocks.Holder[0]} was selected`);
+
+		// 						setTimeout(() => {
+		// 							console.log(`${stocks.Topping[0]} was added as toppings`);
+
+		// 							setTimeout(() => {
+		// 								console.log("Serve the ice cream");
+		// 							}, 2000);
+		// 						}, 3000);
+		// 					}, 2000);
+		// 				}, 1000);
+		// 			}, 1000);
+		// 		}, 2000);
+		// 	}, 0000);
+		// }
+
+		// order(0, production);
+
+		//-----Promises functio using then,ctach,finally----
+		// let stocks = {
+		// 	Fruits: ["Apple", "strawberry", "Mango"],
+		// 	Creams: ["Choclate", "Vannilla", "BuuterScotch"],
+		// 	Holder: ["cone", "sticks", "cup"],
+		// 	Topping: ["Sprinkle", "Candy", "peanuts"],
+		// 	liquids: ["water", "ice"]
+		// };
+
+		// let is_shop_open = false;
+		// let order = (time, work) => {
+		// 	return new Promise((resolve, reject) => {
+		// 		if (is_shop_open) {
+		// 			setTimeout(() => {
+		// 				resolve(work());
+		// 			}, time);
+		// 		} else {
+		// 			reject(console.log("Shop is closed"));
+		// 		}
+		// 	});
+		// };
+
+		// order(2000, () => console.log(`${stocks.Fruits[0]} was selected`))
+		// 	.then(() => {
+		// 		return order(1000, () => console.log("Production started"));
+		// 	})
+		// 	.then(() => {
+		// 		return order(0000, () => console.log("Fruit has been choopped"));
+		// 	})
+		// 	.then(() => {
+		// 		return order(2000, () =>
+		// 			console.log(`${stocks.liquids[0]} and  ${stocks.liquids[1]} is added`)
+		// 		);
+		// 	})
+		// 	.then(() => {
+		// 		return order(1000, () => console.log("Machine started"));
+		// 	})
+		// 	.then(() => {
+		// 		return order(2000, () =>
+		// 			console.log(`${stocks.Holder[1]} was selected as container`)
+		// 		);
+		// 	})
+		// 	.then(() => {
+		// 		return order(1000, () =>
+		// 			console.log(`Topping should be  ${stocks.Topping[0]}`)
+		// 		);
+		// 	})
+		// 	.then(() => {
+		// 		return order(2000, () => console.log("Ice Cream is served"));
+		// 	})
+
+		// 	.catch(() => console.log("Customer Left"))
+
+		// 	.finally(() => console.log("Day eneded ,Shop is closed"));
+
+
+		//----Async Function----
+		// let stocks = {
+		// 	Fruits: ["Apple", "strawberry", "Mango"],
+		// 	Creams: ["Choclate", "Vannilla", "BuuterScotch"],
+		// 	Holder: ["cone", "sticks", "cup"],
+		// 	Topping: ["Sprinkle", "Candy", "peanuts"],
+		// 	liquids: ["water", "ice"]
+		// };
+
+		// async function order() {
+		// 	try {
+		// 		await abc;
+		// 	} catch (error) {
+		// 		console.log(" abc does not exist");
+		// 	} finally {
+		// 		console.log("Run code anyway");
+		// 	}
+		// }
+
+		// order().then(() => {
+		// 	console.log("Hello Again");
+		// });
+
+		///---Await Function
+		// let stocks = {
+		// 	Fruits: ["Apple", "strawberry", "Mango"],
+		// 	Creams: ["Choclate", "Vannilla", "BuuterScotch"],
+		// 	Holder: ["cone", "sticks", "cup"],
+		// 	Topping: ["Sprinkle", "Candy", "peanuts"],
+		// 	liquids: ["water", "ice"]
+		// };
+
+		// let topping = () => {
+		// 	return new Promise((resolve, reject) => {
+		// 		setTimeout(() => {
+		// 			resolve(console.log("What topping would you like"));
+		// 		}, 3000);
+		// 	});
+		// };
+
+		// async function kitchen() {
+		// 	console.log("A");
+		// 	console.log("B");
+		// 	console.log("C");
+
+		// 	await topping();
+		// 	console.log("D");
+		// 	console.log("E");
+		// }
+		// kitchen();
+		// console.log("dOING THE DISHES");
+		// console.log("Cleaning Tables");
+		// console.log("taking other order");
+
+
+		//----Await and Async Function
+		let stocks = {
+			Fruits: ["Apple", "strawberry", "Mango"],
+			Creams: ["Choclate", "Vannilla", "BuuterScotch"],
+			Holder: ["cone", "sticks", "cup"],
+			Topping: ["Sprinkle", "Candy", "peanuts"],
+			liquids: ["water", "ice"]
+		};
+
+		let is_shop_open = false;
+
+		function time(ms) {
+			return new Promise((resolve, reject) => {
+				if (is_shop_open) {
+					setTimeout(resolve, ms);
+				} else {
+					reject(console.log("Shop is closed"));
+				}
+			});
+		}
+
+		async function kitchen() {
+			try {
+				await time(2000);
+				console.log(`${stocks.Fruits[2]} was selected`);
+
+				console.log("Production has started");
+
+				await time(2000);
+				console.log("Fruit has been chopped");
+
+				await time(1000);
+				console.log(`${stocks.liquids[0]} ad ${stocks.liquids[0]} was added`);
+
+				await time(2000);
+				console.log(`${stocks.Topping[0]} was selected`);
+
+				await time(1000);
+				console.log("Machine Started");
+
+				await time(3000);
+				console.log(`${stocks.Holder[0]} was selected as container`);
+
+				await time(2000);
+				console.log("Ice Cream is Served");
+			} catch (error) {
+				console.log("Customer left");
+			} finally {
+				console.log("Day ended,shop is closed for the day");
+			}
+		}
+
+		kitchen();
+
+
+
+
+
+
+
+
+
+>>>>>>> 2ff6d8f9bfde35352a9ddadeff671aebbaf3e53e
 
 	</script>
 </body>
