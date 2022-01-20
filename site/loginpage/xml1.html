@@ -1,0 +1,27 @@
+<html>
+
+<body>
+    <div id="demo"></div>
+
+
+    <script>
+        var text, parser, xmlDOM;
+
+        var text = "<company name='IDBI INTECH LTD'>" +
+            "<dept> AML</dept>" +
+            "<totalemp>15</totalemp>" +
+            "<teamleader>3</teamleader>" +
+            "<projectleader>1</projectleader>" +
+            "<manager>3</manager>" +
+            "<managementtrainee>4</managementtrainee>" +
+            "<seniorexecutive>3</seniorexecutive>" +
+            "</company > "
+
+        parser = new DOMParser();
+        xmlDOM = parser.parseFromString(text, "text/xml");
+        document.getElementById("demo").innerHTML = xmlDOM.getElementsByTagName("dept")[0].childNodes[0].nodeValue;
+
+    </script>
+</body>
+
+</html>
